@@ -8,7 +8,6 @@ public class EchoFilterApplication {
 
     public static void main(String[] args) {
         System.out.println("EchoFilterApplication starts to run");
-
         SpringApplication.run(EchoFilterApplication.class, args);
     }
 
