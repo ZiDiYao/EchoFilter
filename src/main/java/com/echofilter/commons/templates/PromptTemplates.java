@@ -1,4 +1,4 @@
-package com.echofilter.modules.commons.Templates;
+package com.echofilter.commons.templates;
 
 import org.springframework.stereotype.Component;
 

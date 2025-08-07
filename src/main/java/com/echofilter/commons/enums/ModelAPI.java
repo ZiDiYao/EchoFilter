@@ -1,4 +1,4 @@
-package com.echofilter.modules.commons.Enums;
+package com.echofilter.commons.enums;
 
 public enum ModelAPI {
 

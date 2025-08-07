@@ -1,4 +1,4 @@
-package com.echofilter.modules.commons.clients;
+package com.echofilter.commons.clients;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;

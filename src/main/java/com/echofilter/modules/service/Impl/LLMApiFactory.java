@@ -1,7 +1,7 @@
 package com.echofilter.modules.service.Impl;
 
-import com.echofilter.modules.commons.Enums.ModelAPI;
-import com.echofilter.modules.models.ai.LLMApi;
+import com.echofilter.commons.enums.ModelAPI;
+import com.echofilter.modules.ai.LLMApi;
 import org.springframework.stereotype.Component;
 
 import java.util.*;

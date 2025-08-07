@@ -1,10 +1,9 @@
-package com.echofilter.modules.models.ai.Impl;
-
-import com.echofilter.modules.commons.Enums.ModelAPI;
-import com.echofilter.modules.commons.clients.OpenAiClient;
+package com.echofilter.modules.ai.Impl;
+import com.echofilter.commons.enums.ModelAPI;
+import com.echofilter.commons.clients.OpenAiClient;
 import com.echofilter.modules.dto.request.CommentRequest;
 import com.echofilter.modules.dto.response.AnalysisResponse;
-import com.echofilter.modules.models.ai.LLMApi;
+import com.echofilter.modules.ai.LLMApi;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;

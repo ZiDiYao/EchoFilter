@@ -1,9 +1,9 @@
 package com.echofilter.modules.controller;
 
-import com.echofilter.modules.commons.Templates.PromptTemplates;
+import com.echofilter.commons.templates.PromptTemplates;
 import com.echofilter.modules.dto.request.CommentRequest;
 import com.echofilter.modules.dto.response.AnalysisResponse;
-import com.echofilter.modules.models.ai.LLMApi;
+import com.echofilter.modules.ai.LLMApi;
 import com.echofilter.modules.service.CommentAnalysisService;
 import com.echofilter.modules.service.Impl.LLMApiFactory;
 import lombok.RequiredArgsConstructor;

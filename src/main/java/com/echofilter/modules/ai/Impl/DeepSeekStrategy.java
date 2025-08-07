@@ -1,15 +1,13 @@
-package com.echofilter.modules.models.ai.Impl;
+package com.echofilter.modules.ai.Impl;
 
-import com.echofilter.modules.commons.Enums.ModelAPI;
+import com.echofilter.commons.enums.ModelAPI;
 import com.echofilter.modules.dto.request.CommentRequest;
 import com.echofilter.modules.dto.response.AnalysisResponse;
-import com.echofilter.modules.models.ai.LLMApi;
-import org.json.JSONObject;
+import com.echofilter.modules.ai.LLMApi;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Component
-public class GeminiStrategy implements LLMApi {
+public class DeepSeekStrategy implements LLMApi {
     @Override
     public ModelAPI APIName() {
         return null;
@@ -17,7 +15,7 @@ public class GeminiStrategy implements LLMApi {
 
     @Override
     public AnalysisResponse handle(CommentRequest originalRequest) {
-        return null;
+        return  null;
 
     }
 }
