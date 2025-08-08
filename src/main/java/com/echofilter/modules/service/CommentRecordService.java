@@ -1,4 +1,4 @@
 package com.echofilter.modules.service;
 
-public interface CacheService {
+public interface CommentRecordService {
 }
