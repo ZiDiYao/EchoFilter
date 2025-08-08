@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class DeepSeekStrategy implements LLMApi {
     @Override
     public ModelAPI APIName() {
-        return null;
+        return ModelAPI.DEEPSEEK;
     }
 
     @Override

@@ -7,15 +7,15 @@ import com.echofilter.modules.ai.LLMApi;
 import org.springframework.stereotype.Component;
 
 @Component
-public class GeminiStrategy implements LLMApi {
+public class GeminiStrategy extends AbstractLLMStrategy {
+
     @Override
-    public ModelAPI APIName() {
+    protected String callModel(String prompt) {
         return null;
     }
 
     @Override
-    public AnalysisResponse handle(CommentRequest originalRequest) {
-        return null;
-
+    public ModelAPI APIName() {
+        return ModelAPI.GEMINI;
     }
 }
