@@ -1,14 +1,18 @@
 llm:
   prompt:
-    template: |
-      Please perform an objective factual analysis of the following user comment and return the result strictly in JSON format as shown below:
-      
-      {
-        "type": "opinion|fact|misinformation",
-        "confidence": number between 0 and 1,
-        "facts": ["fact 1", "fact 2"],
-        "trustScore": number between 0 and 1
-      }
-
+    template: |-
+      Please perform an objective factual analysis of the following user comment...
       Platform: %s
       Comment: %s
+
+openai:
+  api-url: https://api.openai.com/v1/chat/completions
+  api-key: ${OPENAI_API_KEY}
+  model: gpt-4
+  temperature: 0.0
+
+deepseek:
+  api-url: https://api.deepseek.com/chat/completions
+  api-key: ${DEEPSEEK_API_KEY:}
+  model: deepseek-chat
+  temperature: 0.0

@@ -1,40 +1,37 @@
 package com.echofilter.commons.clients.Impl;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+@Component("deepSeekClient")
 public class DeepSeekClientImpl extends BaseLLMClient {
 
-    private static final String API_KEY = "sk-xxx"; // 可从配置读取
-    private static final String API_URL = "https://api.deepseek.com/chat/completions";
+    @Value("${deepseek.api-url}")
+    private String apiUrl;
 
-    @Override
-    protected String getApiUrl() {
-        return API_URL;
-    }
+    @Value("${deepseek.api-key}")
+    private String apiKey;
 
-    @Override
-    protected String getApiKey() {
-        return API_KEY;
-    }
+    @Value("${deepseek.model}")
+    private String model;
+
+    @Override protected String getApiUrl() { return apiUrl; }
+    @Override protected String getApiKey() { return apiKey; }
 
     @Override
     protected Map<String, Object> buildRequestBody(String prompt) {
-        Map<String, Object> system = Map.of(
-                "role", "system",
-                "content", "You are a helpful assistant."
-        );
-
-        Map<String, Object> user = Map.of(
-                "role", "user",
-                "content", prompt
-        );
+        Map<String, Object> sys = Map.of("role", "system",
+                "content", "You are a strict JSON generator. Respond with JSON only.");
+        Map<String, Object> user = Map.of("role", "user", "content", prompt);
 
         return Map.of(
-                "model", "deepseek-chat",
-                "messages", List.of(system, user),
-                "temperature", 0.2,
+                "model", model,
+                "messages", List.of(sys, user),
+                "temperature", 0.0,
                 "stream", false
         );
     }
@@ -42,8 +39,6 @@ public class DeepSeekClientImpl extends BaseLLMClient {
     @Override
     protected String extractTextFromResponse(String responseJson) throws IOException {
         return mapper.readTree(responseJson)
-                .get("choices").get(0)
-                .get("message").get("content")
-                .asText();
+                .path("choices").path(0).path("message").path("content").asText();
     }
 }

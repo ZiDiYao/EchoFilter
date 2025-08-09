@@ -27,29 +27,23 @@ public abstract class BaseLLMClient implements LLMClient {
                     .addHeader("Content-Type", "application/json")
                     .post(RequestBody.create(
                             mapper.writeValueAsString(buildRequestBody(prompt)),
-                            MediaType.parse("application/json")
-                    ))
+                            MediaType.parse("application/json")))
                     .build();
 
             try (Response response = client.newCall(request).execute()) {
                 if (!response.isSuccessful()) {
-                    throw new IOException("LLM API Call Failed: " + response);
+                    String body = response.body() != null ? response.body().string() : "";
+                    throw new IOException("LLM API call failed: " + response.code() + " " + response.message() + " body=" + body);
                 }
-
-                assert response.body() != null;
-                String body = response.body().string();
-                return extractTextFromResponse(body);
+                return extractTextFromResponse(response.body().string());
             }
         } catch (Exception e) {
-            throw new RuntimeException("LLM API Calling ERROR", e);
+            throw new RuntimeException("LLM API Calling ERROR: " + e.getMessage(), e);
         }
     }
 
     protected abstract String getApiUrl();
-
     protected abstract String getApiKey();
-
     protected abstract Map<String, Object> buildRequestBody(String prompt);
-
     protected abstract String extractTextFromResponse(String responseJson) throws IOException;
 }
