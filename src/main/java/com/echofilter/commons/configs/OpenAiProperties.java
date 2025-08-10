@@ -11,5 +11,5 @@ public class OpenAiProperties {
     private String apiUrl;
     private String apiKey;
     private String model;
-    private double temperature = 0.0; // 默认值
+    private double temperature = 0.0;
 }

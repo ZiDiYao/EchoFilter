@@ -9,13 +9,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class GeminiStrategy extends AbstractLLMStrategy {
 
-    @Override
-    protected String callModel(String prompt) {
-        return null;
-    }
+
 
     @Override
     public ModelAPI APIName() {
         return ModelAPI.GEMINI;
+    }
+
+    @Override
+    protected String callModel(String prompt, String model) {
+        return null;
     }
 }

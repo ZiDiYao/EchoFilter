@@ -5,7 +5,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class PromptTemplates {
 
-    public static final String COMMENT_ANALYSIS_TEMPLATE = """
+    /**
+     * TODO: has to be changed to xml , not card code
+     */
+
+    private static final String COMMENT_ANALYSIS_TEMPLATE = """
 Please perform an objective factual analysis of the following user comment and return the result strictly in JSON format as shown below:
 
 {
@@ -28,6 +32,17 @@ Requirements:
 - DO NOT return markdown or code block formatting.
 
 Platform: %s
-Comment: %s
+Comment: %s%s
 """;
+
+    /** context is allowed to be null */
+    public String buildCommentAnalysis(String platform, String comment, String context) {
+        String ctxBlock = (context == null || context.isBlank())
+                ? ""
+                : "\nContext: " + context;
+        return String.format(COMMENT_ANALYSIS_TEMPLATE, nn(platform), nn(comment), ctxBlock);
+    }
+
+    private static String nn(String s) { return s == null ? "" : s; }
 }
+

@@ -7,12 +7,12 @@ llm:
 
 openai:
   api-url: https://api.openai.com/v1/chat/completions
-  api-key: ${OPENAI_API_KEY}
+  api-key: ${OPENAI_API_KEY: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}
   model: gpt-4
   temperature: 0.0
 
 deepseek:
   api-url: https://api.deepseek.com/chat/completions
-  api-key: ${DEEPSEEK_API_KEY:}
-  model: deepseek-chat
+  api-key: ${DEEPSEEK_API_KEY:sk-5edbfb6f77bf4bd2bb79037ebaac30c0}
+  model: DEEPSEEK
   temperature: 0.0

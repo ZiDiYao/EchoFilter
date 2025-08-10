@@ -1,8 +1,7 @@
 package com.echofilter.modules.ai.Impl;
 
-import com.echofilter.commons.clients.LLMClient;
+import com.echofilter.modules.ai.clients.LLMClient;
 import com.echofilter.commons.enums.ModelAPI;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -18,7 +17,9 @@ public class ChatGptApiStrategy extends AbstractLLMStrategy {
     }
 
     @Override
-    protected String callModel(String prompt) { return client.callLLM(prompt); }
+    protected String callModel(String prompt, String model) {
+        return client.callLLM(prompt, model); // 新签名
+    }
 
     @Override
     public ModelAPI APIName() { return ModelAPI.GPT_4; }

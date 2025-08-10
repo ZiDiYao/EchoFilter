@@ -1,57 +1,68 @@
 package com.echofilter.modules.ai.Impl;
 
+import com.echofilter.commons.configs.LlmProperties;
+import com.echofilter.commons.templates.PromptTemplates;
+import com.echofilter.commons.utils.json.JsonHandler;
 import com.echofilter.modules.ai.LLMApi;
 import com.echofilter.modules.dto.request.CommentRequest;
 import com.echofilter.modules.dto.response.AnalysisResponse;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Value;
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class AbstractLLMStrategy implements LLMApi {
 
-    @Value("${llm.prompt.template}")
-    protected String promptTemplate;
+    @Autowired protected PromptTemplates promptTemplates;
+    @Autowired protected LlmProperties llmProperties;
+    @Autowired protected JsonHandler json;
 
     @Override
     public AnalysisResponse handle(CommentRequest request) {
         String prompt = buildPrompt(request);
-        String raw = callModel(prompt);
-        String jsonOnly = extractJsonSafely(raw);   // <-- guardrail
-        JSONObject obj = new JSONObject(jsonOnly);
-        return parseAnalysisResponse(obj);
-    }
+        String raw = callModelWithResolvedModel(prompt);
 
-    protected String buildPrompt(CommentRequest request) {
-        // Use platform + content; if you also want context, add it to the template and format here.
-        return promptTemplate.formatted(request.getPlatform(), request.getContent());
-    }
+        // 1) 提取最外层 JSON 串
+        String jsonOnly = json.extractJsonSafely(raw);
 
-    protected AnalysisResponse parseAnalysisResponse(JSONObject json) {
-        AnalysisResponse r = new AnalysisResponse();
-        r.setType(json.optString("type", "opinion"));
-        r.setConfidence(bound01(json.optDouble("confidence", 0.5)));
-        r.setTrustScore(bound01(json.optDouble("trustScore", 0.5)));
+        // 2) 直接反序列化为对象（省去手工 set）
+        AnalysisResponse r = json.fromJson(jsonOnly, AnalysisResponse.class);
 
-        List<String> facts = new ArrayList<>();
-        JSONArray arr = json.optJSONArray("facts");
-        if (arr != null) for (int i = 0; i < arr.length(); i++) facts.add(arr.optString(i));
-        r.setFacts(facts);
+        // 3) 后置收敛（数值边界、缺省类型）
+        normalize(r);
         return r;
     }
 
-    private static double bound01(double v){ return Math.max(0.0, Math.min(1.0, v)); }
-
-    /** handle code fences or extra prose from models */
-    private static String extractJsonSafely(String text) {
-        if (text == null) throw new IllegalArgumentException("LLM empty response");
-        int start = text.indexOf('{');
-        int end = text.lastIndexOf('}');
-        if (start >= 0 && end > start) return text.substring(start, end + 1);
-        // last resort: return a minimal fallback to avoid 500s
-        return "{\"type\":\"opinion\",\"confidence\":0.0,\"facts\":[],\"trustScore\":0.0}";
+    protected String buildPrompt(CommentRequest request) {
+        return promptTemplates.buildCommentAnalysis(
+                request.getPlatform(),
+                request.getContent(),
+                request.getContext()
+        );
+    }
+    // Call Models
+    protected String callModelWithResolvedModel(String prompt) {
+        String realModel = llmProperties.resolveRealModel(APIName().name());
+        return callModel(prompt, realModel);
     }
 
-    protected abstract String callModel(String prompt);
+    protected abstract String callModel(String prompt, String model);
+
+    /** 统一做些兜底和边界保护 */
+    protected void normalize(AnalysisResponse r) {
+        if (r.getType() == null || r.getType().isBlank()) {
+            r.setType("opinion");
+        } else {
+            String t = r.getType().toLowerCase();
+            if (!("opinion".equals(t) || "fact".equals(t) || "misinformation".equals(t))) {
+                r.setType("opinion");
+            } else {
+                r.setType(t);
+            }
+        }
+        r.setConfidence(bound01(r.getConfidence()));
+        r.setTrustScore(bound01(r.getTrustScore()));
+        if (r.getFacts() == null) {
+            r.setFacts(java.util.Collections.emptyList());
+        }
+    }
+
+    private static double bound01(double v){ return Math.max(0.0, Math.min(1.0, v)); }
 }
