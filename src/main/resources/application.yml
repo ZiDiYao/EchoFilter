@@ -1,9 +1,9 @@
 llm:
-  prompt:
-    template: |-
-      Please perform an objective factual analysis of the following user comment...
-      Platform: %s
-      Comment: %s
+  models:
+    GPT_4: gpt-4o
+    DEEPSEEK: deepseek-chat
+    GEMINI: gemini-1.5-pro
+
 
 openai:
   api-url: https://api.openai.com/v1/chat/completions
@@ -16,3 +16,4 @@ deepseek:
   api-key: ${DEEPSEEK_API_KEY:sk-5edbfb6f77bf4bd2bb79037ebaac30c0}
   model: DEEPSEEK
   temperature: 0.0
+
