@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommentAnalysisController {
 
     private final CommentAnalysisService commentAnalysisService;
-    private final PromptTemplates promptTemplates;
+//    private final PromptTemplates promptTemplates;
 
     /**
      *
@@ -26,6 +26,7 @@ public class CommentAnalysisController {
 
     @PostMapping("/analyze")
     public AnalysisResponse analyzeComment(@RequestBody CommentRequest request) {
+        System.out.println("analyzeComment controller has been called");
         return commentAnalysisService.getCommentResult(request);
     }
 

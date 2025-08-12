@@ -17,3 +17,11 @@ deepseek:
   model: DEEPSEEK
   temperature: 0.0
 
+#echofilter:
+#  logging:
+#    enabled: true
+#    always-log-summary: true
+#    args:
+#      max-chars: 2000
+#    result:
+#      max-chars: 2000
