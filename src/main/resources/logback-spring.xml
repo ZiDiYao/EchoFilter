@@ -1,0 +1,48 @@
+<configuration>
+    <!-- register Spring Boot color converters -->
+    <conversionRule conversionWord="clr"
+                    converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex"
+                    converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+
+    <!-- plain pattern (no color) for files -->
+    <property name="PLAIN_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - trace=%X{traceId} tenant=%X{tenantId} user=%X{userId} %msg%n%wex"/>
+
+    <!-- colored pattern for console -->
+    <property name="COLORED_PATTERN"
+              value="%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5level) %clr([%thread]){cyan} %clr(%logger{36}){blue} - %clr(trace=%X{traceId} tenant=%X{tenantId} user=%X{userId}){faint} %msg%n%wex"/>
+
+    <!-- console (colored) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${COLORED_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- rolling file (plain, no color) -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/echofilter.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/echofilter.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>50MB</maxFileSize>
+            <maxHistory>14</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${PLAIN_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- root level -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- package-level tuning -->
+    <logger name="com.echofilter.commons.aop.logging.aspect.HttpApiLoggingAspect" level="INFO"/>
+    <logger name="com.echofilter.commons.web.filter" level="INFO"/>
+</configuration>

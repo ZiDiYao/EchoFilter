@@ -1,0 +1,108 @@
+2025-08-12 14:22:49.900 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 20.0.2 with PID 3849 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-12 14:22:49.901 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-12 14:22:49.920 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 14:22:49.920 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 14:22:50.307 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-12 14:22:50.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-12 14:22:50.347 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-12 14:22:50.636 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-12 14:22:50.642 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:22:50.643 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-12 14:22:50.643 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12 14:22:50.659 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-12 14:22:50.659 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 739 ms
+2025-08-12 14:22:51.258 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-12 14:22:51.266 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:22:51.272 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-12 14:22:51.279 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 1.779 seconds (process running for 2.295)
+2025-08-12 14:22:58.159 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 14:22:58.159 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-12 14:22:58.161 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 2 ms
+2025-08-12 14:22:58.254 [http-nio-8080-exec-2] INFO  c.e.c.a.l.a.HttpApiLoggingAspect - trace=4a224576-9597-4af7-8608-58ebc72bd17f tenant= user= IN  <- http=POST path=/test/api/llm/analyze method=CommentAnalysisController.analyzeComment(..) sampled=false args=[request="CommentRequest(platform=Reddit, context=Original Reddit Post: Is it true that 5G towers are dangerous to human health?, content=Absolutely! 5G towers emit harmful radiation that can weaken your immune system and even cause headaches and fatigue. There are several videos online showing people getting sick after 5G was installed in their neighborhood. Governments won't admit it because telecom companies make billions from these towers., userId=123456, LLMAPI=DEEPSEEK)"]
+2025-08-12 14:23:12.286 [http-nio-8080-exec-2] INFO  c.e.c.a.l.a.HttpApiLoggingAspect - trace=4a224576-9597-4af7-8608-58ebc72bd17f tenant= user= OUT -> status=200 tookMs=14029 result=AnalysisResponse{type='misinformation', confidence=0.95, facts=[5G technology operates within the non-ionizing part of the electromagnetic spectrum, which does not have enough energy to damage DNA or cells directly., The World Health Organization (WHO) and other scientific bodies have stated that there is no conclusive evidence linking 5G exposure to harmful health effects., Symptoms like headaches and fatigue are subjective and can be caused by a variety of factors, not necessarily 5G radiation., Telecom companies are regulated by government agencies that enforce safety standards based on scientific research.], trustScore=0.1}
+2025-08-12 14:25:28.328 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-12 14:25:28.370 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 14:25:28.372 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:30.397 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-12 14:25:30.400 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:30.399 [http-nio-8080-Acceptor] ERROR org.apache.tomcat.util.net.Acceptor - trace= tenant= user= Socket accept failed
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:383)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:407)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72)
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2025-08-12 14:25:30.558 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 20.0.2 with PID 3849 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-12 14:25:30.558 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-12 14:25:30.732 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-12 14:25:30.732 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-12 14:25:30.737 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-08-12 14:25:30.820 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-12 14:25:30.821 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:30.821 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-12 14:25:30.821 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12 14:25:30.831 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-12 14:25:30.831 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 271 ms
+2025-08-12 14:25:31.007 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-12 14:25:31.016 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:31.018 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-12 14:25:31.021 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 0.499 seconds (process running for 162.039)
+2025-08-12 14:25:31.022 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-08-12 14:25:40.573 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12 14:25:40.578 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 14:25:40.580 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:42.593 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-12 14:25:42.593 [http-nio-8080-Acceptor] ERROR org.apache.tomcat.util.net.Acceptor - trace= tenant= user= Socket accept failed
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:383)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:407)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72)
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2025-08-12 14:25:42.596 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:42.698 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 20.0.2 with PID 3849 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-12 14:25:42.699 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-12 14:25:42.775 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-12 14:25:42.775 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-12 14:25:42.779 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-08-12 14:25:42.881 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-12 14:25:42.881 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:42.881 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-12 14:25:42.881 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12 14:25:42.886 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-12 14:25:42.886 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 186 ms
+2025-08-12 14:25:43.032 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-12 14:25:43.038 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:25:43.039 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-12 14:25:43.042 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 0.359 seconds (process running for 174.06)
+2025-08-12 14:25:43.042 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-08-12 14:26:59.526 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 14:27:01.535 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-12 14:27:08.665 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 20.0.2 with PID 3933 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-12 14:27:08.667 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-12 14:27:08.696 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 14:27:08.696 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 14:27:09.290 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-12 14:27:09.292 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-12 14:27:09.321 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-08-12 14:27:09.682 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-12 14:27:09.689 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:27:09.690 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-12 14:27:09.690 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-12 14:27:09.706 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-12 14:27:09.706 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 1010 ms
+2025-08-12 14:27:10.321 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-12 14:27:10.329 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-12 14:27:10.336 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-12 14:27:10.344 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 2.401 seconds (process running for 3.164)
+2025-08-12 14:27:16.617 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 14:27:16.620 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-12 14:27:16.627 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 7 ms
+2025-08-12 14:27:16.705 [http-nio-8080-exec-2] INFO  c.e.c.a.l.a.HttpApiLoggingAspect - trace=2d48a6af-e785-4dec-94d2-9c5ec606bb26 tenant= user= IN  <- http=POST path=/test/api/llm/analyze method=CommentAnalysisController.analyzeComment(..) sampled=false args=[request="CommentRequest(platform=Reddit, context=Original Reddit Post: Is it true that 5G towers are dangerous to human health?, content=Absolutely! 5G towers emit harmful radiation that can weaken your immune system and even cause headaches and fatigue. There are several videos online showing people getting sick after 5G was installed in their neighborhood. Governments won't admit it because telecom companies make billions from these towers., userId=123456, LLMAPI=DEEPSEEK)"]
+2025-08-12 14:27:25.226 [http-nio-8080-exec-2] INFO  c.e.c.a.l.a.HttpApiLoggingAspect - trace=2d48a6af-e785-4dec-94d2-9c5ec606bb26 tenant= user= OUT -> status=200 tookMs=8520 result=AnalysisResponse{type='misinformation', confidence=0.95, facts=[5G technology operates within the non-ionizing part of the electromagnetic spectrum, which does not have enough energy to damage DNA or cells directly., The World Health Organization (WHO) and other scientific bodies have stated that there is no conclusive evidence linking 5G to harmful health effects., Symptoms like headaches and fatigue are non-specific and cannot be directly attributed to 5G without scientific evidence., Telecom companies are regulated by government agencies that enforce safety standards for radiation emissions.], trustScore=0.1}
+2025-08-12 14:28:14.205 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 14:28:16.222 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete

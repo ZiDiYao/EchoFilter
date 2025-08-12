@@ -14,9 +14,9 @@ public class CommentRequest {
     @JsonProperty("content")
     private String content;
 
+    // this is not the id given by us. But, an id which is registered on social media
     @JsonProperty("userId")
-    private Long userId;
-
+    private Long PlatformUserId;
     @JsonProperty("LLMAPI")
     private String LLMAPI;
 
