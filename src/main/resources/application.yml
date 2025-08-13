@@ -33,7 +33,3 @@ logging:
   level:
     # 建议先用 INFO；排查问题时可临时升到 DEBUG
     com.echofilter.commons.aop.logging.aspect.HttpApiLoggingAspect: INFO
-
-# 可选：路由匹配调试（排查 Controller 映射用，临时打开）
-#  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: TRACE
-#  org.springframework.web.servlet.DispatcherServlet: DEBUG

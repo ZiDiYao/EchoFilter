@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prompt id="comment-analysis" version="1">
+    <description>
+        Prompt for classifying a user comment and extracting minimal annotations for UI highlighting.
+        Enforces that "factsText" must be present and "trustScore" must be valid between 0 and 1.
+        Requires model to use both comment and optional context for analysis.
+    </description>
+
+    <template><![CDATA[
+Return ONLY a JSON object with the following schema (no markdown, no extra text, no explanations outside JSON):
+
+{
+  "type": "OPINION|FACT|MISINFORMATION|TOXICITY|OTHER",
+  "confidence": 0.0,
+  "factsText": ["...", "..."],   // Always include at least 1 factual statement if type is FACT or MISINFORMATION
+  "trustScore": 0.0,             // Must be a number between 0 and 1
+  "annotations": [
+    {
+      "text": "span to flag",
+      "category": "MISINFORMATION|OPINION|INFORMATION|DISINFORMATION|UNSUBSTANTIATED_CLAIM|OUTDATED_INFORMATION|TOXICITY|HARASSMENT|HATE_SPEECH|SPAM|PROPAGANDA|SATIRE|SENSITIVE_CONTENT|OTHER",
+      "severity": "INFO|WARN|ERROR",
+      "message": "short tooltip",
+      "suggestion": "optional short fix",
+      "confidence": 0.0,
+      "topic": "POLITICS|HEALTH|TECHNOLOGY|ECONOMY|ENVIRONMENT|EDUCATION|RELIGION|CULTURE|ENTERTAINMENT|SPORTS|SOCIAL_ISSUES|IMMIGRATION|GENDER_RELATIONS|HOUSING|WORKPLACE|TRANSPORTATION|CRIME|SCIENCE|TRAVEL|FOOD|ANIMAL_RIGHTS|INTERNATIONAL_RELATIONS|LAW_AND_ORDER|WAR_AND_CONFLICT|OTHER",
+      "meta": { "rule": "optional_rule_id" }
+    }
+  ]
+}
+
+Rules:
+- Be strictly objective.
+- Use both the comment text ("Comment") and the optional context ("Context") for classification.
+- If context is provided (non-empty), treat it as the original post or surrounding text and use it to interpret the comment accurately.
+- If "type" is FACT or MISINFORMATION:
+    - "factsText" MUST contain 1–3 concise factual points (never empty).
+- "trustScore" MUST always be included and between 0.0 and 1.0.
+- Output valid JSON only; no markdown/code fences.
+
+Platform: %s
+Language: %s
+Comment: %s
+Context: %s
+    ]]></template>
+</prompt>
