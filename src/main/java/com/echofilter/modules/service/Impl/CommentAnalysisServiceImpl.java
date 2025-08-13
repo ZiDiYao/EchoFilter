@@ -2,6 +2,7 @@ package com.echofilter.modules.service.Impl;
 
 import com.echofilter.modules.ai.LLMApi;
 import com.echofilter.modules.dto.request.CommentRequest;
+import com.echofilter.modules.dto.request.LlmPromptInput;
 import com.echofilter.modules.dto.response.AnalysisResponse;
 import com.echofilter.modules.factories.LLMApiFactory;
 import com.echofilter.modules.service.CommentAnalysisService;
@@ -15,9 +16,9 @@ public class CommentAnalysisServiceImpl implements CommentAnalysisService {
     private final LLMApiFactory llmApiFactoryImpl;
     // use the model, then call the API
     @Override
-    public AnalysisResponse getCommentResult(CommentRequest commentRequest) {
-        System.out.println("Request LLMAPI: " + commentRequest.getLlmApi());
-        LLMApi api = llmApiFactoryImpl.getLLMApi(commentRequest.getLlmApi());
+    public AnalysisResponse getCommentResult(LlmPromptInput commentRequest) {
+        System.out.println("Request LLMAPI: " + commentRequest.LlmApi());
+        LLMApi api = llmApiFactoryImpl.getLLMApi(commentRequest.LlmApi());
         System.out.println("After Factory: " + api.APIName());
         return api.handle(commentRequest);
     }

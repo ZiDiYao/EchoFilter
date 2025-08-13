@@ -1,5 +1,6 @@
-package com.echofilter.modules.dto.request;
+package com.echofilter.bff.dto.request;
 
+import com.echofilter.modules.dto.request.CommentRequest;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
@@ -8,13 +9,8 @@ import lombok.Data;
 import java.time.OffsetDateTime;
 import java.util.List;
 
-/**
- * Incoming payload for analyzing a single comment.
- * Adds anchoring hints so the frontend can reliably re-attach annotations.
- */
 @Data
-public class CommentRequest {
-
+public class CommentRequestBFF {
     /** Platform name, e.g., Reddit / YouTube / X / Internal */
     @NotBlank
     @JsonProperty("platform")
@@ -71,7 +67,7 @@ public class CommentRequest {
      * The frontend must use the same rule when mapping start/end offsets.
      */
     @JsonProperty("normalization")
-    private Normalization normalization = Normalization.WHITESPACE_COLLAPSE;
+    private CommentRequest.Normalization normalization = CommentRequest.Normalization.WHITESPACE_COLLAPSE;
 
     /**
      * Hash of the normalized text, e.g., "sha256:abcdef...".
@@ -101,7 +97,7 @@ public class CommentRequest {
      * Some platforms load different comments depending on the sort mode.
      */
     @JsonProperty("sortHint")
-    private SortHint sortHint;
+    private CommentRequest.SortHint sortHint;
 
     /**
      * Optional thread path from root to this comment, e.g., ["t1_a","t1_b","t1_c"].
@@ -138,7 +134,7 @@ public class CommentRequest {
     }
 
     @JsonProperty("freshness")
-    private Freshness freshness;
+    private CommentRequest.Freshness freshness;
 
     @Data
     public static class Freshness {
