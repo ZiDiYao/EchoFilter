@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<prompt id="comment-analysis" version="1">
+<prompt id="comment-analysis" version="3">
     <description>
-        Prompt for classifying a user comment and extracting minimal annotations for UI highlighting.
-        Enforces that "factsText" must be present and "trustScore" must be valid between 0 and 1.
-        Requires model to use both comment and optional context for analysis.
+        Classify a user comment; return JSON strictly using predefined enums for type/category/topic.
     </description>
 
     <template><![CDATA[
-Return ONLY a JSON object with the following schema (no markdown, no extra text, no explanations outside JSON):
+Return ONLY a JSON object with the following schema (no markdown, no extra text):
 
 {
-  "type": "OPINION|FACT|MISINFORMATION|TOXICITY|OTHER",
+  "type": "OPINION|FACT|MISINFORMATION|TOXICITY|OTHER",  // Must match OverallType enum
   "confidence": 0.0,
-  "factsText": ["...", "..."],   // Always include at least 1 factual statement if type is FACT or MISINFORMATION
-  "trustScore": 0.0,             // Must be a number between 0 and 1
+  "facts": ["..."],            // 1–3 concise, checkable statements (never empty)
+  "evidence": ["..."],         // If type is FACT: 1–3 scientific facts or institutional conclusions
+  "counterExamples": ["..."],  // If type is TOXICITY or extreme stance: 1–2 balanced counter-examples
+  "trustScore": 0.0, // Confidence in factual accuracy & reliability of the comment (0.0 = completely unreliable, 1.0 = fully reliable, must be between 0.0 and 1.0)
   "annotations": [
     {
       "text": "span to flag",
-      "category": "MISINFORMATION|OPINION|INFORMATION|DISINFORMATION|UNSUBSTANTIATED_CLAIM|OUTDATED_INFORMATION|TOXICITY|HARASSMENT|HATE_SPEECH|SPAM|PROPAGANDA|SATIRE|SENSITIVE_CONTENT|OTHER",
+      "category": "INFORMATION|OPINION|MISINFORMATION|DISINFORMATION|HATE_SPEECH|HARASSMENT|TOXICITY|SPAM|SENSITIVE_CONTENT|ERROR_INFORMATION|PROPAGANDA|SATIRE|UNSUBSTANTIATED_CLAIM|OUTDATED_INFORMATION|OTHER", // Must match Category enum
       "severity": "INFO|WARN|ERROR",
       "message": "short tooltip",
       "suggestion": "optional short fix",
       "confidence": 0.0,
-      "topic": "POLITICS|HEALTH|TECHNOLOGY|ECONOMY|ENVIRONMENT|EDUCATION|RELIGION|CULTURE|ENTERTAINMENT|SPORTS|SOCIAL_ISSUES|IMMIGRATION|GENDER_RELATIONS|HOUSING|WORKPLACE|TRANSPORTATION|CRIME|SCIENCE|TRAVEL|FOOD|ANIMAL_RIGHTS|INTERNATIONAL_RELATIONS|LAW_AND_ORDER|WAR_AND_CONFLICT|OTHER",
+      "topic": "POLITICS|GENDER_RELATIONS|IMMIGRATION|HEALTH|ENVIRONMENT|TECHNOLOGY|ECONOMY|RELIGION|EDUCATION|LAW_AND_ORDER|INTERNATIONAL_RELATIONS|CULTURE|SPORTS|SCIENCE|SOCIAL_ISSUES|ENTERTAINMENT|CRIME|TRAVEL|FOOD|ANIMAL_RIGHTS|WORKPLACE|HOUSING|TRANSPORTATION|WAR_AND_CONFLICT|OTHER", // Must match Topic enum
       "meta": { "rule": "optional_rule_id" }
     }
   ]
 }
 
-Rules:
-- Be strictly objective.
-- Use both the comment text ("Comment") and the optional context ("Context") for classification.
-- If context is provided (non-empty), treat it as the original post or surrounding text and use it to interpret the comment accurately.
-- If "type" is FACT or MISINFORMATION:
-    - "factsText" MUST contain 1–3 concise factual points (never empty).
-- "trustScore" MUST always be included and between 0.0 and 1.0.
-- Output valid JSON only; no markdown/code fences.
+Rules (HARD):
+- Use ONLY the enum values listed above, with EXACT spelling and UPPERCASE.
+- If context is provided, use it for interpretation.
+- If type is FACT or MISINFORMATION:
+  - "facts" must have 1–3 concise, checkable statements.
+  - If type is FACT: include "evidence".
+- If extreme stance: include "counterExamples".
+- trustScore must be between 0.0 and 1.0.
+- Output valid JSON only.
 
-Platform: %s
-Language: %s
-Comment: %s
-Context: %s
-    ]]></template>
+Platform: %1$s
+Language: %2$s
+Comment: %3$s
+Context: %4$s
+  ]]></template>
 </prompt>

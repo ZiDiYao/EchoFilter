@@ -13,22 +13,21 @@ public class PromptTemplates {
      * context 可以为 null
      */
     public String buildCommentAnalysis(String platform, String language, String comment, String context) {
-        System.out.println("buildCommentAnalysis has been called" );
-        System.out.println("platform"+platform);
-        System.out.println("language:"+language);
-        System.out.println("comment:"+ comment);
-        System.out.println("context:"+ context);
+        System.out.println("buildCommentAnalysis has been called");
+        System.out.println("platform=" + platform);
+        System.out.println("language=" + language);
+        System.out.println("comment=" + comment);
+        System.out.println("context=" + context);
+
         return String.format(
                 commentAnalysisTemplate,
-                platform,
-                comment,
-                context
+                nn(platform),
+                nn(language),
+                nn(comment),
+                nn(context)
         );
     }
 
+    private static String nn(String s) { return s == null ? "" : s; }
 
-
-    private static String nn(String s) {
-        return s == null ? "" : s;
-    }
 }
