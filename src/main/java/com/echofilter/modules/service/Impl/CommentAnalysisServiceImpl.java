@@ -16,8 +16,8 @@ public class CommentAnalysisServiceImpl implements CommentAnalysisService {
     // use the model, then call the API
     @Override
     public AnalysisResponse getCommentResult(CommentRequest commentRequest) {
-        System.out.println("Request LLMAPI: " + commentRequest.getLLMAPI());
-        LLMApi api = llmApiFactoryImpl.getLLMApi(commentRequest.getLLMAPI());
+        System.out.println("Request LLMAPI: " + commentRequest.getLlmApi());
+        LLMApi api = llmApiFactoryImpl.getLLMApi(commentRequest.getLlmApi());
         System.out.println("After Factory: " + api.APIName());
         return api.handle(commentRequest);
     }
