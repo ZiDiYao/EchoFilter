@@ -1,10 +1,9 @@
 package com.echofilter.modules.ai.Impl;
 
-import com.echofilter.commons.configs.LlmProperties;
+import com.echofilter.modules.ai.configs.LlmProperties;
 import com.echofilter.commons.templates.PromptTemplates;
 import com.echofilter.commons.utils.json.JsonHandler;
 import com.echofilter.modules.ai.LLMApi;
-import com.echofilter.modules.dto.request.CommentRequest;
 import com.echofilter.modules.dto.request.LlmPromptInput;
 import com.echofilter.modules.dto.response.AnalysisResponse;
 import org.springframework.beans.factory.annotation.Autowired;

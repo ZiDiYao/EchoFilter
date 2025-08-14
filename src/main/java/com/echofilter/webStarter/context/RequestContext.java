@@ -1,4 +1,4 @@
-package com.echofilter.commons.web.context;
+package com.echofilter.webStarter.context;
 
 public final class RequestContext {
     private final String traceId;

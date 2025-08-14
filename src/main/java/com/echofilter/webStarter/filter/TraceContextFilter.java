@@ -1,7 +1,7 @@
-package com.echofilter.commons.web.filter;
+package com.echofilter.webStarter.filter;
 
-import com.echofilter.commons.web.context.RequestContext;
-import com.echofilter.commons.web.context.RequestContextHolder;
+import com.echofilter.webStarter.context.RequestContext;
+import com.echofilter.webStarter.context.RequestContextHolder;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

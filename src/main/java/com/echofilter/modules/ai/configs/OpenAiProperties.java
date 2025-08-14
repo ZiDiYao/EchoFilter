@@ -1,4 +1,4 @@
-package com.echofilter.commons.configs;
+package com.echofilter.modules.ai.configs;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 
 @Data
 @Component
-@ConfigurationProperties(prefix = "deepseek")
-public class DeepSeekProperties {
+@ConfigurationProperties(prefix = "openai")
+public class OpenAiProperties {
     private String apiUrl;
     private String apiKey;
     private String model;

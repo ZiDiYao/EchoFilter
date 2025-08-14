@@ -43,6 +43,6 @@
     </root>
 
     <!-- package-level tuning -->
-    <logger name="com.echofilter.commons.aop.logging.aspect.HttpApiLoggingAspect" level="INFO"/>
+    <logger name="com.echofilter.commons.utils.aop.logging.aspect.HttpApiLoggingAspect" level="INFO"/>
     <logger name="com.echofilter.commons.web.filter" level="INFO"/>
 </configuration>

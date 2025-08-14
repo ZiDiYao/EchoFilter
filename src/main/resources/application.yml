@@ -32,4 +32,4 @@ echofilter:
 logging:
   level:
     # 建议先用 INFO；排查问题时可临时升到 DEBUG
-    com.echofilter.commons.aop.logging.aspect.HttpApiLoggingAspect: INFO
+    com.echofilter.commons.utils.aop.logging.aspect.HttpApiLoggingAspect: INFO

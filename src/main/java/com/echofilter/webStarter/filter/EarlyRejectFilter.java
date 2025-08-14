@@ -1,4 +1,4 @@
-package com.echofilter.commons.web.filter;
+package com.echofilter.webStarter.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
