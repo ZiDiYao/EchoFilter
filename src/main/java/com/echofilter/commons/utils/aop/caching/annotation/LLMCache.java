@@ -1,4 +1,4 @@
-package com.echofilter.commons.aop.caching.annotation;
+package com.echofilter.commons.utils.aop.caching.annotation;
 import java.lang.annotation.*;
 
 @Target(ElementType.METHOD)

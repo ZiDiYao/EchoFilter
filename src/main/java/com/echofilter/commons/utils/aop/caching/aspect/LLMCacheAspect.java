@@ -1,4 +1,4 @@
-package com.echofilter.commons.aop.caching.aspect;
+package com.echofilter.commons.utils.aop.caching.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;

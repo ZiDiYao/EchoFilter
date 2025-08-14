@@ -1,4 +1,4 @@
-package com.echofilter.commons.configs;
+package com.echofilter.modules.ai.configs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
