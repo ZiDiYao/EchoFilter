@@ -28,4 +28,6 @@ public class PromptTemplates {
         );
     }
 
-    private static String nn(String s
+    private static String nn(String s) { return s == null ? "" : s; }
+
+}
