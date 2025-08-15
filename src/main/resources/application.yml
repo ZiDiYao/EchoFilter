@@ -33,3 +33,5 @@ logging:
   level:
     # 建议先用 INFO；排查问题时可临时升到 DEBUG
     com.echofilter.commons.utils.aop.logging.aspect.HttpApiLoggingAspect: INFO
+
+LOG_DIR: /var/log/echofilter
