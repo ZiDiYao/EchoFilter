@@ -1,10 +1,12 @@
 package com.echofilter.modules.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 
 import java.util.List;
 
 @Getter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AnalysisResponse {
     private String type;
     private double confidence;
