@@ -1,10 +1,10 @@
 package com.echofilter.modules.ai.Impl;
 
-import com.echofilter.commons.configs.LlmProperties;
+import com.echofilter.modules.ai.configs.LlmProperties;
 import com.echofilter.commons.templates.PromptTemplates;
 import com.echofilter.commons.utils.json.JsonHandler;
 import com.echofilter.modules.ai.LLMApi;
-import com.echofilter.modules.dto.request.CommentRequest;
+import com.echofilter.modules.dto.request.LlmPromptInput;
 import com.echofilter.modules.dto.response.AnalysisResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,7 +15,7 @@ public abstract class AbstractLLMStrategy implements LLMApi {
     @Autowired protected JsonHandler json;
 
     @Override
-    public AnalysisResponse handle(CommentRequest request) {
+    public AnalysisResponse handle(LlmPromptInput request) {
         String prompt = buildPrompt(request);
         String raw = callModelWithResolvedModel(prompt);
 
@@ -27,16 +27,20 @@ public abstract class AbstractLLMStrategy implements LLMApi {
 
         // 3) 后置收敛（数值边界、缺省类型）
         normalize(r);
+        System.out.println("handle:" + r.getFacts());
         return r;
     }
 
-    protected String buildPrompt(CommentRequest request) {
+    protected String buildPrompt(LlmPromptInput request) {
         return promptTemplates.buildCommentAnalysis(
-                request.getPlatform(),
-                request.getContent(),
-                request.getContext()
+                request.platform(),
+                request.language(),
+                request.content(),
+                request.context()
         );
     }
+
+
     // Call Models
     protected String callModelWithResolvedModel(String prompt) {
         String realModel = llmProperties.resolveRealModel(APIName().name());
@@ -47,6 +51,7 @@ public abstract class AbstractLLMStrategy implements LLMApi {
 
     /** 统一做些兜底和边界保护 */
     protected void normalize(AnalysisResponse r) {
+        System.out.println("normalize:" + r.getFacts());
         if (r.getType() == null || r.getType().isBlank()) {
             r.setType("opinion");
         } else {

@@ -1,54 +1,66 @@
-<configuration scan="true" scanPeriod="30 seconds">
-    <property name="LOG_PATH" value="logs"/>
-    <property name="APP" value="echo-filter"/>
+<configuration>
+    <!-- 可通过环境变量覆盖：LOG_DIR=/var/log/echofilter -->
+    <property name="LOG_DIR" value="${LOG_DIR:-logs}"/>
+    <property name="ACTIVE_DIR" value="${LOG_DIR}/current"/>
+    <property name="ARCHIVE_DIR" value="${LOG_DIR}/archive"/>
 
-    <!-- JSON 编码器：自动带上 MDC -->
-    <appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_PATH}/${APP}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_PATH}/${APP}.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
-            <maxHistory>14</maxHistory>
-        </rollingPolicy>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-            <customFields>{"app":"${APP}","env":"${SPRING_PROFILES_ACTIVE:-local}"}</customFields>
+    <!-- 样式 -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <property name="PLAIN_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - trace=%X{traceId} tenant=%X{tenantId} user=%X{userId} %msg%n%wex"/>
+    <property name="COLORED_PATTERN"
+              value="%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5level) %clr([%thread]){cyan} %clr(%logger{36}){blue} - %clr(trace=%X{traceId} tenant=%X{tenantId} user=%X{userId}){faint} %msg%n%wex"/>
+
+    <!-- 控制台 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${COLORED_PATTERN}</pattern>
+            <charset>UTF-8</charset>
         </encoder>
     </appender>
 
-    <!-- 错误单独文件 -->
-    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_PATH}/${APP}-error.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_PATH}/${APP}-error.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+    <!-- 应用通用日志：当前文件在 ACTIVE_DIR，归档压缩放到 ARCHIVE_DIR -->
+    <appender name="APP_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${ACTIVE_DIR}/echofilter.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 归档文件统一放到 archive 目录，并 gzip 压缩 -->
+            <fileNamePattern>${ARCHIVE_DIR}/echofilter.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>50MB</maxFileSize>
             <maxHistory>14</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
         </rollingPolicy>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>ERROR</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
-        </filter>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+        <encoder>
+            <pattern>${PLAIN_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
     </appender>
 
-    <!-- 异步 -->
-    <appender name="ASYNC_JSON" class="ch.qos.logback.classic.AsyncAppender">
-        <queueSize>8192</queueSize>
-        <discardingThreshold>0</discardingThreshold>
-        <neverBlock>true</neverBlock>
-        <appender-ref ref="JSON_FILE"/>
-    </appender>
-    <appender name="ASYNC_ERROR" class="ch.qos.logback.classic.AsyncAppender">
-        <queueSize>2048</queueSize>
-        <discardingThreshold>0</discardingThreshold>
-        <neverBlock>true</neverBlock>
-        <appender-ref ref="ERROR_FILE"/>
+    <!-- AOP(API) 专用日志：单独文件与归档目录 -->
+    <appender name="API_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${ACTIVE_DIR}/api.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_DIR}/api.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>50MB</maxFileSize>
+            <maxHistory>14</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${PLAIN_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
     </appender>
 
+    <!-- 根日志：控制台 + 应用通用日志 -->
     <root level="INFO">
-        <appender-ref ref="ASYNC_JSON"/>
-        <appender-ref ref="ASYNC_ERROR"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="APP_FILE"/>
     </root>
 
-    <!-- 降噪 -->
-    <logger name="org.springframework" level="WARN"/>
-    <logger name="okhttp3" level="WARN"/>
+    <!-- 只把切面的日志写到 API_FILE，不向上冒泡（避免混到 echofilter.log 里） -->
+    <logger name="com.echofilter.commons.aop.HttpApiLoggingAspect" level="INFO" additivity="false">
+        <appender-ref ref="API_FILE"/>
+    </logger>
 </configuration>

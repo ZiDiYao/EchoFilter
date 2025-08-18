@@ -1,7 +1,7 @@
 package com.echofilter.modules.controller;
 
-import com.echofilter.commons.templates.PromptTemplates;
-import com.echofilter.modules.dto.request.CommentRequest;
+import com.echofilter.crosscutting.AOP.annotation.ApiLog;
+import com.echofilter.modules.dto.request.LlmPromptInput;
 import com.echofilter.modules.dto.response.AnalysisResponse;
 import com.echofilter.modules.service.CommentAnalysisService;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommentAnalysisController {
 
     private final CommentAnalysisService commentAnalysisService;
-    private final PromptTemplates promptTemplates;
 
     /**
      *
@@ -25,7 +24,9 @@ public class CommentAnalysisController {
      */
 
     @PostMapping("/analyze")
-    public AnalysisResponse analyzeComment(@RequestBody CommentRequest request) {
+    @ApiLog(sample = 1.0, argsMax = 2048, resultMax = 2048, logHeaders = false)
+    public AnalysisResponse analyzeComment(@RequestBody LlmPromptInput request) {
+        System.out.println("analyzeComment controller has been called");
         return commentAnalysisService.getCommentResult(request);
     }
 

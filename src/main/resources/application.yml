@@ -17,3 +17,21 @@ deepseek:
   model: DEEPSEEK
   temperature: 0.0
 
+echofilter:
+  logging:
+    enabled: true                 # 总开关：false 则切面完全不生效
+    always-log-summary: true      # 即便未采样也打印 IN/OUT 摘要；设为 false 仅采样时打印
+    args:
+      max-chars: 2000             # 入参字符串最大长度（超出会截断）
+    result:
+      max-chars: 2000             # 返回值字符串最大长度（超出会截断）
+
+  tracing:
+    sample-rate: 0.10             # TraceContextFilter 确定性采样率（0~1），示例 10%
+
+logging:
+  level:
+    # 建议先用 INFO；排查问题时可临时升到 DEBUG
+    com.echofilter.commons.utils.aop.logging.aspect.HttpApiLoggingAspect: INFO
+
+LOG_DIR: /var/log/echofilter
