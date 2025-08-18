@@ -35,3 +35,11 @@ logging:
     com.echofilter.commons.utils.aop.logging.aspect.HttpApiLoggingAspect: INFO
 
 LOG_DIR: /var/log/echofilter
+
+spring:
+  data:
+    redis:
+      host: 81.70.198.98
+      port: 6379
+      password: 787887Robert
+      database: 0

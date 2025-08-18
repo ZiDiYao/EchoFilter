@@ -1,56 +1,125 @@
-2025-08-17 17:34:15.638 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 83085 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
-2025-08-17 17:34:15.641 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
-2025-08-17 17:34:15.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-17 17:34:15.667 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-17 17:34:15.996 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
-2025-08-17 17:34:15.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-08-17 17:34:16.020 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2025-08-17 17:34:16.359 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
-2025-08-17 17:34:16.368 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
-2025-08-17 17:34:16.369 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
-2025-08-17 17:34:16.369 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-17 17:34:16.392 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
-2025-08-17 17:34:16.393 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 726 ms
-2025-08-17 17:34:18.123 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-08-17 17:34:18.491 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
-2025-08-17 17:34:18.500 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
-2025-08-17 17:34:18.513 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
-2025-08-17 17:34:18.519 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 5.723 seconds (process running for 6.019)
-2025-08-17 17:36:55.452 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-17 17:36:55.454 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
-2025-08-17 17:36:55.461 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 6 ms
-2025-08-17 17:37:13.858 [http-nio-8080-exec-2] INFO  c.e.c.A.aspect.HttpApiLoggingAspect - trace=72aa0694-964b-4bcd-9822-d92c25cb4824 tenant= user= API OK method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=18276 args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}] result={"type":"misinformation","confidence":0.9,"facts":["5G towers operate within safety guidelines set by regulatory bodies.","There is no scientific evidence linking 5G technology to harmful health effects in humans.","The World Health Organization (WHO) states that 5G exposure levels are well below international safety limits."],"trustScore":0.1}
-2025-08-17 17:37:21.036 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-17 17:37:23.068 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
-2025-08-17 18:47:12.723 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 84459 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
-2025-08-17 18:47:17.560 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
-2025-08-17 18:47:17.613 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-17 18:47:17.613 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-17 18:47:17.938 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
-2025-08-17 18:47:17.940 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-08-17 18:47:17.960 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-2025-08-17 18:47:18.266 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
-2025-08-17 18:47:18.275 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
-2025-08-17 18:47:18.276 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
-2025-08-17 18:47:18.276 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-17 18:47:18.294 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
-2025-08-17 18:47:18.295 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 682 ms
-2025-08-17 18:47:18.551 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-08-17 18:47:18.877 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
-2025-08-17 18:47:18.885 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
-2025-08-17 18:47:18.892 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
-2025-08-17 18:47:18.898 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 6.467 seconds (process running for 6.667)
-2025-08-17 18:47:24.183 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-17 18:47:24.184 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
-2025-08-17 18:47:24.186 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 2 ms
-2025-08-17 18:47:45.720 [http-nio-8080-exec-2] INFO  c.e.c.A.aspect.HttpApiLoggingAspect - trace=34d3dbb5-ddfb-487b-94db-7138d4d0b5cb tenant= user= API OK method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=21421 args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}] result={"type":"misinformation","confidence":0.9,"facts":["5G towers operate within safety limits set by international guidelines.","There is no scientific evidence linking 5G technology to harmful health effects in humans.","Regulatory bodies like the WHO and FCC have stated that 5G is safe when exposure is below recommended limits."],"trustScore":0.1}
-2025-08-17 18:47:45.757 [http-nio-8080-exec-2] ERROR o.s.w.servlet.HandlerExecutionChain - trace=34d3dbb5-ddfb-487b-94db-7138d4d0b5cb tenant= user= HandlerInterceptor.afterCompletion threw exception
+2025-08-18 13:38:26.370 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 98961 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 13:38:26.373 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 13:38:26.401 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 13:38:26.401 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 13:38:26.485 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - trace= tenant= user= Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.echofilter.EchoFilterApplication]
+2025-08-18 13:38:26.502 [restartedMain] ERROR o.s.boot.SpringApplication - trace= tenant= user= Application run failed
 
-java.lang.NullPointerException: Cannot invoke "java.lang.Exception.getMessage()" because "ex" is null
-	at com.echofilter.crosscutting.Interceptors.TimingInterceptor.afterCompletion(TimingInterceptor.java:41)
-	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:176)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1186)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.echofilter.EchoFilterApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.echofilter.EchoFilterApplication.main(EchoFilterApplication.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'redisConfig' for bean class [com.echofilter.modules.ai.configs.RedisConfig] conflicts with existing, non-compatible bean definition of same name and class [com.echofilter.commons.utils.redisUtils.RedisConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	... 16 common frames omitted
+
+2025-08-18 13:40:41.966 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 99056 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 13:40:41.967 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 13:40:41.993 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 13:40:41.993 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 13:40:42.389 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-18 13:40:42.391 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-18 13:40:42.414 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-18 13:40:42.772 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-18 13:40:42.780 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-18 13:40:42.782 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-18 13:40:42.782 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 13:40:42.798 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-18 13:40:42.798 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 805 ms
+2025-08-18 13:40:43.236 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-18 13:40:43.425 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-18 13:40:43.435 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-18 13:40:43.442 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 13:40:43.448 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 1.792 seconds (process running for 2.037)
+2025-08-18 13:40:57.737 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 13:40:57.737 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-18 13:40:57.740 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 3 ms
+2025-08-18 13:41:17.606 [http-nio-8080-exec-2] ERROR c.e.c.A.aspect.HttpApiLoggingAspect - trace=d3f6b175-04b4-4e57-a4ee-8ef36ed35011 tenant= user= API ERR method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=19781 exType=InvalidJsonFormatException msg=JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"]) args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}]
+2025-08-18 13:41:17.697 [http-nio-8080-exec-2] ERROR c.e.c.Interceptors.TimingInterceptor - trace=d3f6b175-04b4-4e57-a4ee-8ef36ed35011 tenant= user= HTTP ERR method=POST uri=/test/api/llm/analyze status=200 tookMs=19939 handler=CommentAnalysisController.analyzeComment exType=InvalidJsonFormatException msg=JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])...
+2025-08-18 13:41:17.705 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - trace= tenant= user= Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.echofilter.commons.exceptions.InvalidJsonFormatException: JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"])] with root cause
+
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1180)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2244)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1823)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1801)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:308)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:169)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3855)
+	at com.echofilter.commons.utils.json.JsonHandler.fromJson(JsonHandler.java:19)
+	at com.echofilter.modules.ai.Impl.AbstractLLMStrategy.handle(AbstractLLMStrategy.java:26)
+	at com.echofilter.modules.service.Impl.CommentAnalysisServiceImpl.getCommentResult(CommentAnalysisServiceImpl.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.echofilter.crosscutting.AOP.aspect.CommentCacheAspect.around(CommentCacheAspect.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.echofilter.modules.service.Impl.CommentAnalysisServiceImpl$$SpringCGLIB$$0.getCommentResult(<generated>)
+	at com.echofilter.modules.controller.CommentAnalysisController.analyzeComment(CommentAnalysisController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.echofilter.crosscutting.AOP.aspect.HttpApiLoggingAspect.logHttp(HttpApiLoggingAspect.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.echofilter.modules.controller.CommentAnalysisController$$SpringCGLIB$$0.analyzeComment(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
@@ -62,19 +131,19 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Exception.getMessage()"
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at com.echofilter.webStarter.filter.HttpMetricsFilter.doFilterInternal(HttpMetricsFilter.java:19)
+	at com.echofilter.bff.webStarter.filter.HttpMetricsFilter.doFilterInternal(HttpMetricsFilter.java:19)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at com.echofilter.webStarter.filter.EarlyRejectFilter.doFilterInternal(EarlyRejectFilter.java:18)
+	at com.echofilter.bff.webStarter.filter.EarlyRejectFilter.doFilterInternal(EarlyRejectFilter.java:18)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at com.echofilter.webStarter.filter.TenantUserTaggingFilter.doFilterInternal(TenantUserTaggingFilter.java:18)
+	at com.echofilter.bff.webStarter.filter.TenantUserTaggingFilter.doFilterInternal(TenantUserTaggingFilter.java:18)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at com.echofilter.webStarter.filter.TraceContextFilter.doFilterInternal(TraceContextFilter.java:93)
+	at com.echofilter.bff.webStarter.filter.TraceContextFilter.doFilterInternal(TraceContextFilter.java:93)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
@@ -107,5 +176,322 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Exception.getMessage()"
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 
-2025-08-17 18:49:27.566 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-17 18:49:29.600 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-18 13:43:20.490 [http-nio-8080-exec-2] INFO  c.e.c.Interceptors.TimingInterceptor - trace= tenant= user= HTTP OK method=POST uri=/error status=500 tookMs=597 handler=BasicErrorController.error
+2025-08-18 13:44:01.510 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18 13:44:03.639 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-18 13:47:44.044 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 99271 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 13:47:45.460 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 13:47:45.511 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 13:47:45.512 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 13:47:45.834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-18 13:47:45.835 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-18 13:47:45.853 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-08-18 13:47:46.187 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-18 13:47:46.195 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-18 13:47:46.196 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-18 13:47:46.196 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 13:47:46.213 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-18 13:47:46.213 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 701 ms
+2025-08-18 13:47:46.650 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-18 13:47:46.822 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-18 13:47:46.829 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-18 13:47:46.838 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 13:47:46.845 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 3.077 seconds (process running for 3.279)
+2025-08-18 13:47:55.903 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 13:47:55.905 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-18 13:47:55.909 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 4 ms
+2025-08-18 13:48:16.397 [http-nio-8080-exec-1] ERROR c.e.c.A.aspect.HttpApiLoggingAspect - trace=73e3acbe-aa12-4207-ab84-c06ef74a4400 tenant= user= API ERR method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=20348 exType=InvalidJsonFormatException msg=JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"]) args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}]
+2025-08-18 13:48:16.445 [http-nio-8080-exec-1] ERROR c.e.c.Interceptors.TimingInterceptor - trace=73e3acbe-aa12-4207-ab84-c06ef74a4400 tenant= user= HTTP ERR method=POST uri=/test/api/llm/analyze status=200 tookMs=20503 handler=CommentAnalysisController.analyzeComment exType=InvalidJsonFormatException msg=JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])...
+2025-08-18 13:48:16.450 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - trace= tenant= user= Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.echofilter.commons.exceptions.InvalidJsonFormatException: JSON parse error: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"])] with root cause
+
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "evidence" (class com.echofilter.modules.dto.response.AnalysisResponse), not marked as ignorable (4 known properties: "type", "facts", "confidence", "trustScore"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 9, column: 16] (through reference chain: com.echofilter.modules.dto.response.AnalysisResponse["evidence"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1180)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2244)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1823)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1801)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:308)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:169)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3855)
+	at com.echofilter.commons.utils.json.JsonHandler.fromJson(JsonHandler.java:19)
+	at com.echofilter.modules.ai.Impl.AbstractLLMStrategy.handle(AbstractLLMStrategy.java:26)
+	at com.echofilter.modules.service.Impl.CommentAnalysisServiceImpl.getCommentResult(CommentAnalysisServiceImpl.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.echofilter.crosscutting.AOP.aspect.CommentCacheAspect.around(CommentCacheAspect.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.echofilter.modules.service.Impl.CommentAnalysisServiceImpl$$SpringCGLIB$$0.getCommentResult(<generated>)
+	at com.echofilter.modules.controller.CommentAnalysisController.analyzeComment(CommentAnalysisController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.echofilter.crosscutting.AOP.aspect.HttpApiLoggingAspect.logHttp(HttpApiLoggingAspect.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.echofilter.modules.controller.CommentAnalysisController$$SpringCGLIB$$0.analyzeComment(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.HttpMetricsFilter.doFilterInternal(HttpMetricsFilter.java:19)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.EarlyRejectFilter.doFilterInternal(EarlyRejectFilter.java:18)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.TenantUserTaggingFilter.doFilterInternal(TenantUserTaggingFilter.java:18)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.TraceContextFilter.doFilterInternal(TraceContextFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-08-18 13:48:17.150 [http-nio-8080-exec-1] INFO  c.e.c.Interceptors.TimingInterceptor - trace= tenant= user= HTTP OK method=POST uri=/error status=500 tookMs=74 handler=BasicErrorController.error
+2025-08-18 13:48:59.792 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18 13:48:59.851 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-18 14:30:31.959 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 406 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 14:30:38.218 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 14:30:38.276 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 14:30:38.276 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 14:30:38.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-18 14:30:38.641 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-18 14:30:38.693 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2025-08-18 14:30:39.101 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-18 14:30:39.110 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:30:39.112 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-18 14:30:39.112 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 14:30:39.130 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-18 14:30:39.130 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 854 ms
+2025-08-18 14:30:39.551 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-18 14:30:39.750 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-18 14:30:39.760 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:30:39.768 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 14:30:39.774 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 8.171 seconds (process running for 8.466)
+2025-08-18 14:31:02.568 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 14:31:02.570 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-18 14:31:02.590 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 19 ms
+2025-08-18 14:31:27.458 [http-nio-8080-exec-2] INFO  c.e.c.A.aspect.HttpApiLoggingAspect - trace=04f8fd92-80da-4d5b-a522-9efc9c2f0b66 tenant= user= API OK method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=24673 args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}] result={"type":"misinformation","confidence":0.9,"facts":["5G towers operate within safety limits set by international guidelines.","There is no scientific evidence linking 5G technology to harmful health effects in humans.","Regulatory bodies like the WHO and FCC have stated that 5G is safe when exposure remains below recommended limits."],"trustScore":0.1}
+2025-08-18 14:31:27.492 [http-nio-8080-exec-2] INFO  c.e.c.Interceptors.TimingInterceptor - trace=04f8fd92-80da-4d5b-a522-9efc9c2f0b66 tenant= user= HTTP OK method=POST uri=/test/api/llm/analyze status=200 tookMs=24864 handler=CommentAnalysisController.analyzeComment
+2025-08-18 14:31:51.018 [http-nio-8080-exec-3] ERROR c.e.c.A.aspect.HttpApiLoggingAspect - trace=80f41a85-c879-4917-895d-186bacfe7c46 tenant= user= API ERR method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=221 exType=ClassCastException msg=class java.util.LinkedHashMap cannot be cast to class com.echofilter.modules.dto.response.AnalysisResponse (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.echofilter.modules.dto.response.AnalysisResponse is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5cf1f216) args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}]
+2025-08-18 14:31:51.028 [http-nio-8080-exec-3] ERROR c.e.c.Interceptors.TimingInterceptor - trace=80f41a85-c879-4917-895d-186bacfe7c46 tenant= user= HTTP ERR method=POST uri=/test/api/llm/analyze status=200 tookMs=238 handler=CommentAnalysisController.analyzeComment exType=ClassCastException msg=class java.util.LinkedHashMap cannot be cast to class com.echofilter.modules.dto.response.AnalysisResponse (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.echofilter.modules...
+2025-08-18 14:31:51.030 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - trace= tenant= user= Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.echofilter.modules.dto.response.AnalysisResponse (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.echofilter.modules.dto.response.AnalysisResponse is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5cf1f216)] with root cause
+
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class com.echofilter.modules.dto.response.AnalysisResponse (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.echofilter.modules.dto.response.AnalysisResponse is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @5cf1f216)
+	at com.echofilter.modules.service.Impl.CommentAnalysisServiceImpl$$SpringCGLIB$$0.getCommentResult(<generated>)
+	at com.echofilter.modules.controller.CommentAnalysisController.analyzeComment(CommentAnalysisController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.echofilter.crosscutting.AOP.aspect.HttpApiLoggingAspect.logHttp(HttpApiLoggingAspect.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.echofilter.modules.controller.CommentAnalysisController$$SpringCGLIB$$0.analyzeComment(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.HttpMetricsFilter.doFilterInternal(HttpMetricsFilter.java:19)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.EarlyRejectFilter.doFilterInternal(EarlyRejectFilter.java:18)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.TenantUserTaggingFilter.doFilterInternal(TenantUserTaggingFilter.java:18)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.echofilter.bff.webStarter.filter.TraceContextFilter.doFilterInternal(TraceContextFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-08-18 14:31:51.936 [http-nio-8080-exec-3] INFO  c.e.c.Interceptors.TimingInterceptor - trace= tenant= user= HTTP OK method=POST uri=/error status=500 tookMs=41 handler=BasicErrorController.error
+2025-08-18 14:32:07.227 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18 14:32:09.359 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-18 14:51:23.787 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 1019 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 14:51:23.787 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 14:51:23.812 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 14:51:23.812 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 14:51:24.139 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-18 14:51:24.140 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-18 14:51:24.160 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-18 14:51:24.556 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-18 14:51:24.563 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:51:24.564 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-08-18 14:51:24.564 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 14:51:24.582 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-08-18 14:51:24.582 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 770 ms
+2025-08-18 14:51:25.079 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-18 14:51:25.246 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-18 14:51:25.256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:51:25.272 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 14:51:25.278 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 1.781 seconds (process running for 2.02)
+2025-08-18 14:51:36.135 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 14:51:36.136 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-08-18 14:51:36.140 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 4 ms
+2025-08-18 14:51:56.416 [http-nio-8080-exec-1] INFO  c.e.c.A.aspect.HttpApiLoggingAspect - trace=98a28e58-f9c5-4a13-8edd-38e12360e3b6 tenant= user= API OK method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=20160 args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}] result={"type":"misinformation","confidence":0.9,"facts":["5G towers operate within safety guidelines set by regulatory bodies.","There is no scientific evidence linking 5G radiation to harmful health effects in humans.","The World Health Organization states that 5G technology is safe when adhering to international standards."],"trustScore":0.1}
+2025-08-18 14:51:56.435 [http-nio-8080-exec-1] INFO  c.e.c.Interceptors.TimingInterceptor - trace=98a28e58-f9c5-4a13-8edd-38e12360e3b6 tenant= user= HTTP OK method=POST uri=/test/api/llm/analyze status=200 tookMs=20265 handler=CommentAnalysisController.analyzeComment
+2025-08-18 14:52:14.630 [http-nio-8080-exec-3] INFO  c.e.c.A.aspect.HttpApiLoggingAspect - trace=4a343097-445e-4b70-9e74-177f33ff9b58 tenant= user= API OK method=POST uri=/test/api/llm/analyze ip=0:0:0:0:0:0:0:1 handler=CommentAnalysisController.analyzeComment tookMs=115 args=[{"platform":"Reddit","language":"en","content":"5G towers are noto safe according to humansan and will kill people.","context":"Original Post: Is it true that 5G towers are dangerous to human health?","constraints":{"region":"US","requiresFreshEvidence":true,"freshnessWindowHours":72},"LlmApi":"DEEPSEEK"}] result={"type":"misinformation","confidence":0.9,"facts":["5G towers operate within safety guidelines set by regulatory bodies.","There is no scientific evidence linking 5G radiation to harmful health effects in humans.","The World Health Organization states that 5G technology is safe when adhering to international standards."],"trustScore":0.1}
+2025-08-18 14:52:14.634 [http-nio-8080-exec-3] INFO  c.e.c.Interceptors.TimingInterceptor - trace=4a343097-445e-4b70-9e74-177f33ff9b58 tenant= user= HTTP OK method=POST uri=/test/api/llm/analyze status=200 tookMs=133 handler=CommentAnalysisController.analyzeComment
+2025-08-18 14:52:19.531 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 20 class path changes (20 additions, 0 deletions, 0 modifications)
+2025-08-18 14:52:19.561 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18 14:52:19.565 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:52:21.598 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-08-18 14:52:21.602 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-08-18 14:52:21.602 [http-nio-8080-Acceptor] ERROR org.apache.tomcat.util.net.Acceptor - trace= tenant= user= Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:218)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:383)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:408)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:537)
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72)
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025-08-18 14:52:22.416 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 23.0.2 with PID 1019 (/Users/yaozidi/Desktop/EchoFilter/target/classes started by yaozidi in /Users/yaozidi/Desktop/EchoFilter)
+2025-08-18 14:52:22.416 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-08-18 14:56:12.553 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-18 14:56:12.557 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-18 14:56:12.585 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2025-08-18 14:56:15.095 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-08-18 14:56:15.104 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 232685 ms
+2025-08-18 14:56:22.677 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-18 14:56:22.790 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-08-18 14:56:22.840 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 14:56:22.844 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 240.991 seconds (process running for 299.583)
+2025-08-18 14:56:22.845 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18 14:56:22.846 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-08-18 14:56:24.852 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
