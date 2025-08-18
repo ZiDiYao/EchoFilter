@@ -17,4 +17,5 @@ public class TenantUserTaggingFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         filterChain.doFilter(request, response);
 
-    
+    }
+}
