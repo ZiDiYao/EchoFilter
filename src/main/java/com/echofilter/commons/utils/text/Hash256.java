@@ -16,6 +16,7 @@ public final class Hash256 {
                 sb.append(Character.forDigit((b >>> 4) & 0xF, 16));
                 sb.append(Character.forDigit((b & 0xF), 16));
             }
+            System.out.println("Hash256 is " + sb.toString());
             return sb.toString();
         } catch (NoSuchAlgorithmException e) {
             throw new IllegalStateException("SHA-256 not available", e);

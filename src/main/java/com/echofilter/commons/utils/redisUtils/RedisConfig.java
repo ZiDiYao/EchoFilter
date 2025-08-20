@@ -32,7 +32,7 @@ public class RedisConfig {
         var analysisSer = new Jackson2JsonRedisSerializer<>(om, AnalysisResponse.class);
         var analysisCfg = defaultCfg.serializeValuesWith(
                 RedisSerializationContext.SerializationPair.fromSerializer(analysisSer)
-        ).entryTtl(Duration.ofSeconds(300));
+        ).entryTtl(Duration.ofSeconds(604800));
 
         return RedisCacheManager.builder(factory)
                 .cacheDefaults(defaultCfg)

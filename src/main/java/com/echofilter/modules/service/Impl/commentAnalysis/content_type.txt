@@ -1,0 +1,86 @@
+Content_type:
+1. FACT
+2. OPINION
+3. MISINFORMATION
+4. SATIRE (讽刺,反话,阴阳怪气)
+5. HUMOR（梗/段子/玩笑，无主张）
+6. PERSONAL_UPDATE（生活分享/个人经历）
+7. CHITCHAT（寒暄/情绪/emoji/打招呼）
+8. OFFTOPIC（与主题无关）
+9. QUESTION（提问/求证/求源）
+10.QUESTION（提问/求证/求源）
+11.SPAM_PROMO（广告/推广/引流）
+12.MEDIA_SHARE（分享链接/截图/新闻转贴）
+
+
+Attributes:
+1. stance（立场）：PRO | CON | NEUTRAL | UNKNOWN
+2. toxicity（过激/辱骂度）：0–1
+3. extremity（极端/煽动）：0–1
+4. harassment（人身攻击）：0–1
+5. hate_speech（仇恨言论）：NONE | IMPLIED | EXPLICIT
+6. sarcasm（反讽概率）：0–1
+7. sentiment（情感）：POS | NEG | MIXED | NEUTRAL
+8. quality（信息密度/可读性）：0–1
+9. verifiability（可证性）：HIGH | MEDIUM | LOW | NONE
+10.credibility（可信度/信源可靠）：0–1
+11.certainty（表述确定度）：HEDGE | NEUTRAL | CERTAIN
+12.evidence_presence（是否引证）：NONE | CLAIMED | LINK | QUOTE | DATA
+
+Topics:
+
+1. POLITICS_GOV（政治/政府/选举）
+2. GEOPOLITICS（地缘/国际关系）
+3. ECONOMY_MARKETS（经济/就业/房价/通胀）
+4. SCIENCE_HEALTH（科学/健康/医学/流行病）
+5. TECH_AI（科技/AI/隐私/网络安全）
+6. SOCIAL_ISSUES（社会议题/性别/种族/教育）
+7. LAW_CRIME（法律/治安/司法）
+8. ENVIRONMENT（环境/气候/能源）
+9. ENTERTAINMENT_MEDIA（娱乐/媒体/名人）
+10. SPORTS
+11. LIFESTYLE（个人理财/职场/饮食/健身/旅游）
+12. LOCAL（本地化话题—可叠加城市/国家）
+13. Others
+
+Rhetoric/Form:
+1. HYPERBOLE（夸张）
+2. RHETORICAL_QUESTION（反问）
+3. WHATABOUTISM（转移比较/甩锅式对比）
+4. STRAW_MAN（稻草人）
+5. AD_HOMINEM（人身攻击）
+6. APPEAL_TO_AUTHORITY（诉诸权威）
+7. ANECDATA（只用个例）
+8. CONSPIRACY_CUE（阴谋暗示）
+9. DOGWHISTLE（隐语/内梗）
+10. EMOJI_HEAVY（emoji 占比高）
+11. LOW_EFFORT（低投入/无信息量：+1、lol、哈哈）
+12. LINK_DUMP（只丢链接/截图）
+13. QUOTE_ONLY（纯引用）
+14. COPY_PASTE_PATTERN（复读/模板化）
+
+
+Safety_flags:
+1. MINORS_INVOLVED（涉未成年人）
+2. SELF_HARM_CUE（自残/自杀暗示）
+3. VIOLENCE_THREAT（暴力威胁）
+4. TERRORISM_PROPAGANDA
+5. SEXUAL_CONTENT（敏感性内容）
+6. PERSONAL_DATA（隐私/人肉）
+7. ELECTION_SENSITIVE（选举敏感—合规流程用）
+8. HEALTH_MISINFO_RISK（健康误导高风险）
+9. FINANCIAL_ADVICE_RISK（金融建议风险）
+
+Missing_context:
+
+
+
+
+无脑必富化：MISINFORMATION, FACT, QUESTION, 任何 *_RISK 安全标
+观点富化：当且仅当 OPINION + ADD_CONTEXT_NEEDED 命中关键维度
+修辞警示：ANECDATA, STRAW_MAN, WHATABOUTISM 命中即给“提示卡”，不做重核
+其余均 Tag-Only（折叠/排序用）
+
+1. MISINFORMATION
+2. QUESTION
+3. OPINION -> 触发 missing_context 检查
