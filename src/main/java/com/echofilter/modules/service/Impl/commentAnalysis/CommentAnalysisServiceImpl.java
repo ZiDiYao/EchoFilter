@@ -1,4 +1,4 @@
-package com.echofilter.modules.service.Impl;
+package com.echofilter.modules.service.Impl.commentAnalysis;
 
 import com.echofilter.modules.ai.LLMApi;
 import com.echofilter.modules.dto.request.LlmPromptInput;
