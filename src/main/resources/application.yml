@@ -43,3 +43,8 @@ spring:
       port: 6379
       password: 787887Robert
       database: 0
+
+  kafka:
+    bootstrap-servers: 81.70.198.98:9092
+    admin:
+      fail-fast: true

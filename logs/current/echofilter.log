@@ -495,3 +495,682 @@ java.nio.channels.AsynchronousCloseException: null
 2025-08-18 14:56:22.845 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
 2025-08-18 14:56:22.846 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
 2025-08-18 14:56:24.852 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 00:39:46.694 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 59988 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 00:39:46.695 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 00:39:46.734 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-03 00:39:46.735 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-03 00:39:47.347 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 00:39:47.349 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 00:39:47.387 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2025-10-03 00:39:47.976 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 00:39:47.984 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 00:39:47.985 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 00:39:47.985 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 00:39:48.023 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 00:39:48.023 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 1288 ms
+2025-10-03 00:39:48.664 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 00:39:49.071 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 00:39:49.086 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 00:39:49.101 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 00:39:49.108 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 2.973 seconds (process running for 3.484)
+2025-10-03 00:39:56.034 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 00:39:56.042 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:03:42.569 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 58644 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:03:42.571 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:03:42.604 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-03 01:03:42.604 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-03 01:03:43.146 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:03:43.148 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:03:43.182 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:03:43.735 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:03:43.744 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:03:43.745 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:03:43.746 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:03:43.789 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:03:43.789 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 1184 ms
+2025-10-03 01:03:44.408 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:03:44.743 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:03:44.765 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-03 01:03:44.814 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-03 01:03:44.815 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:03:44.815 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759467824813
+2025-10-03 01:03:49.730 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-1 unregistered
+2025-10-03 01:03:49.733 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:03:49.733 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:03:49.733 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:03:49.736 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:03:49.744 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:03:49.750 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 7.606 seconds (process running for 8.082)
+2025-10-03 01:03:54.597 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:03:54.608 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:25:42.547 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 65860 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:25:42.549 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:25:42.581 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-03 01:25:42.581 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-03 01:25:43.122 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:25:43.124 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:25:43.163 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:25:43.737 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:25:43.746 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:43.747 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:25:43.747 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:25:43.785 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:25:43.786 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 1204 ms
+2025-10-03 01:25:44.468 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:25:44.776 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:25:44.798 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-03 01:25:44.847 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-03 01:25:44.848 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:25:44.848 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759469144846
+2025-10-03 01:25:47.314 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-1 unregistered
+2025-10-03 01:25:47.317 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:25:47.318 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:25:47.318 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:25:47.321 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:47.329 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:25:47.336 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 5.212 seconds (process running for 5.692)
+2025-10-03 01:25:49.334 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 109 class path changes (0 additions, 106 deletions, 3 modifications)
+2025-10-03 01:25:49.337 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:25:49.338 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:49.349 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:25:49.349 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:49.454 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 65860 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:25:49.455 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:25:49.586 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:25:49.586 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:25:49.588 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:25:49.639 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:25:49.640 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:49.640 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:25:49.640 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:25:49.662 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:25:49.663 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 206 ms
+2025-10-03 01:25:49.681 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:25:49.731 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:25:49.735 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:49.738 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:25:49.740 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 0.324 seconds (process running for 8.097)
+2025-10-03 01:25:49.741 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-10-03 01:25:52.658 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 106 class path changes (106 additions, 0 deletions, 0 modifications)
+2025-10-03 01:25:52.660 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:25:52.661 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:52.673 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:25:52.673 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:52.761 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 65860 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:25:52.761 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:25:53.017 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:25:53.017 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:25:53.033 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:25:53.112 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:25:53.113 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:53.113 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:25:53.113 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:25:53.131 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:25:53.131 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 369 ms
+2025-10-03 01:25:53.292 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:25:53.402 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:25:53.407 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-03 01:25:53.410 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-03 01:25:53.410 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:25:53.410 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759469153410
+2025-10-03 01:25:55.618 [kafka-admin-client-thread | adminclient-2] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-2 unregistered
+2025-10-03 01:25:55.619 [kafka-admin-client-thread | adminclient-2] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:25:55.620 [kafka-admin-client-thread | adminclient-2] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:25:55.620 [kafka-admin-client-thread | adminclient-2] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:25:55.620 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:25:55.623 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:25:55.625 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 2.893 seconds (process running for 13.982)
+2025-10-03 01:25:55.626 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-10-03 01:28:41.896 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-03 01:28:41.896 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-10-03 01:28:41.897 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 1 ms
+2025-10-03 01:28:42.027 [http-nio-8080-exec-2] INFO  o.a.k.c.producer.ProducerConfig - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [81.70.198.98:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-10-03 01:28:42.055 [http-nio-8080-exec-2] INFO  o.a.k.c.t.i.KafkaMetricsCollector - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= initializing Kafka metrics collector
+2025-10-03 01:28:42.065 [http-nio-8080-exec-2] INFO  o.a.k.clients.producer.KafkaProducer - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-10-03 01:28:42.081 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= Kafka version: 3.9.1
+2025-10-03 01:28:42.081 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:28:42.081 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= Kafka startTimeMs: 1759469322081
+2025-10-03 01:28:43.085 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - trace= tenant= user= [Producer clientId=producer-1] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+2025-10-03 01:28:43.108 [http-nio-8080-exec-2] INFO  c.e.c.Interceptors.TimingInterceptor - trace=70160f3b-a477-4276-9ca3-80c1f1cd2c60 tenant= user= HTTP OK method=POST uri=/analyze/batch status=202 tookMs=1194 handler=SendToKafkaController.batch
+2025-10-03 01:28:43.114 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - trace= tenant= user= [Producer clientId=producer-1] ProducerId set to 1001 with epoch 0
+2025-10-03 01:29:19.509 [http-nio-8080-exec-3] INFO  c.e.c.Interceptors.TimingInterceptor - trace=ec97b8f9-3732-42ee-b4c0-d7ebfc5a50bf tenant= user= HTTP OK method=POST uri=/analyze/batch status=202 tookMs=2 handler=SendToKafkaController.batch
+2025-10-03 01:31:31.345 [http-nio-8080-exec-6] INFO  c.e.c.Interceptors.TimingInterceptor - trace=1ea7bcfa-7824-433e-9b15-5f7010460a37 tenant= user= HTTP OK method=POST uri=/analyze/batch status=202 tookMs=7 handler=SendToKafkaController.batch
+2025-10-03 01:32:41.043 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-10-03 01:32:41.044 [Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:32:41.045 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:41.056 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:32:41.056 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:41.057 [Thread-11] INFO  o.a.k.clients.producer.KafkaProducer - trace= tenant= user= [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-10-03 01:32:41.061 [Thread-11] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:32:41.061 [Thread-11] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:32:41.061 [Thread-11] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-03 01:32:41.061 [Thread-11] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:32:41.061 [Thread-11] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.producer for producer-1 unregistered
+2025-10-03 01:32:41.134 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 65860 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:32:41.134 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:32:41.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:32:41.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:32:41.325 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:32:41.414 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:32:41.415 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:41.416 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:32:41.416 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:32:41.490 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:32:41.490 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 353 ms
+2025-10-03 01:32:41.686 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:32:41.814 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:32:41.820 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-03 01:32:41.822 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-03 01:32:41.823 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:32:41.823 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759469561822
+2025-10-03 01:32:43.278 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - trace= tenant= user= Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-03 01:32:44.021 [kafka-admin-client-thread | adminclient-3] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-3 unregistered
+2025-10-03 01:32:44.022 [kafka-admin-client-thread | adminclient-3] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:32:44.022 [kafka-admin-client-thread | adminclient-3] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:32:44.022 [kafka-admin-client-thread | adminclient-3] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:32:44.022 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:44.025 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:32:44.027 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 2.928 seconds (process running for 422.384)
+2025-10-03 01:32:44.028 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-10-03 01:32:44.028 [Thread-15] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:32:44.028 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Pausing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:44.040 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-03 01:32:44.041 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Stopping ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:44.120 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 65860 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-03 01:32:44.121 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-03 01:32:44.264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-03 01:32:44.265 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-03 01:32:44.281 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-10-03 01:32:44.357 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-03 01:32:44.357 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:44.357 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-03 01:32:44.357 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-03 01:32:44.378 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-03 01:32:44.378 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 256 ms
+2025-10-03 01:32:44.541 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-03 01:32:44.655 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-03 01:32:44.660 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-03 01:32:44.663 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-03 01:32:44.663 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-03 01:32:44.663 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759469564662
+2025-10-03 01:32:46.860 [kafka-admin-client-thread | adminclient-4] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-4 unregistered
+2025-10-03 01:32:46.861 [kafka-admin-client-thread | adminclient-4] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-03 01:32:46.861 [kafka-admin-client-thread | adminclient-4] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-03 01:32:46.861 [kafka-admin-client-thread | adminclient-4] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-03 01:32:46.862 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-03 01:32:46.864 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-03 01:32:46.866 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 2.771 seconds (process running for 425.223)
+2025-10-03 01:32:46.866 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - trace= tenant= user= Condition evaluation unchanged
+2025-10-03 01:36:42.685 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-03 01:36:42.697 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
