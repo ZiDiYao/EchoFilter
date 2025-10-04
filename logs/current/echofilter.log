@@ -267,3 +267,362 @@
 2025-10-04 00:18:46.317 [kafka-1] INFO  o.s.k.l.KafkaMessageListenerContainer - trace= tenant= user= echofilter-group: Consumer stopped
 2025-10-04 00:18:46.318 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-04 00:18:46.330 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-04 14:09:27.599 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Starting EchoFilterApplication using Java 21.0.8 with PID 32096 (C:\Projects\EchoFilter\target\classes started by ZiDiY in C:\Projects\EchoFilter)
+2025-10-04 14:09:27.601 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= No active profile set, falling back to 1 default profile: "default"
+2025-10-04 14:09:27.635 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04 14:09:27.635 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - trace= tenant= user= For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04 14:09:28.860 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04 14:09:28.862 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-04 14:09:28.907 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - trace= tenant= user= Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2025-10-04 14:09:29.596 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat initialized with port 8080 (http)
+2025-10-04 14:09:29.606 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-04 14:09:29.608 [restartedMain] INFO  o.a.catalina.core.StandardService - trace= tenant= user= Starting service [Tomcat]
+2025-10-04 14:09:29.608 [restartedMain] INFO  o.a.catalina.core.StandardEngine - trace= tenant= user= Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-10-04 14:09:29.648 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring embedded WebApplicationContext
+2025-10-04 14:09:29.649 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - trace= tenant= user= Root WebApplicationContext: initialization completed in 2013 ms
+2025-10-04 14:09:30.424 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - trace= tenant= user= Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-04 14:09:30.730 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - trace= tenant= user= LiveReload server is running on port 35729
+2025-10-04 14:09:30.784 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - trace= tenant= user= AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [81.70.198.98:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-10-04 14:09:30.929 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-04 14:09:30.930 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-04 14:09:30.930 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759601370927
+2025-10-04 14:09:33.528 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.admin.client for adminclient-1 unregistered
+2025-10-04 14:09:33.531 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-04 14:09:33.532 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-04 14:09:33.532 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-04 14:09:33.535 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - trace= tenant= user= Starting ProtocolHandler ["http-nio-8080"]
+2025-10-04 14:09:33.541 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - trace= tenant= user= Tomcat started on port 8080 (http) with context path '/'
+2025-10-04 14:09:33.562 [restartedMain] INFO  o.a.k.c.consumer.ConsumerConfig - trace= tenant= user= ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [81.70.198.98:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-echofilter-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = echofilter-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 200
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-10-04 14:09:33.598 [restartedMain] INFO  o.a.k.c.t.i.KafkaMetricsCollector - trace= tenant= user= initializing Kafka metrics collector
+2025-10-04 14:09:33.637 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka version: 3.9.1
+2025-10-04 14:09:33.637 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-04 14:09:33.637 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= Kafka startTimeMs: 1759601373637
+2025-10-04 14:09:33.639 [restartedMain] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Subscribed to topic(s): ef.requests.v1
+2025-10-04 14:09:33.653 [restartedMain] INFO  c.echofilter.EchoFilterApplication - trace= tenant= user= Started EchoFilterApplication in 6.553 seconds (process running for 6.91)
+2025-10-04 14:09:34.611 [kafka-1] INFO  org.apache.kafka.clients.Metadata - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+2025-10-04 14:09:34.612 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Discovered group coordinator 81.70.198.98:9092 (id: 2147483646 rack: null)
+2025-10-04 14:09:34.615 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] (Re-)joining group
+2025-10-04 14:09:35.574 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Request joining group due to: need to re-join with the given member-id: consumer-echofilter-group-1-44732b90-690f-4e99-bdc0-f3b42434f572
+2025-10-04 14:09:35.575 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] (Re-)joining group
+2025-10-04 14:09:38.815 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-echofilter-group-1-44732b90-690f-4e99-bdc0-f3b42434f572', protocol='range'}
+2025-10-04 14:09:38.822 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Finished assignment for group at generation 3: {consumer-echofilter-group-1-44732b90-690f-4e99-bdc0-f3b42434f572=Assignment(partitions=[ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11])}
+2025-10-04 14:09:39.065 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-echofilter-group-1-44732b90-690f-4e99-bdc0-f3b42434f572', protocol='range'}
+2025-10-04 14:09:39.066 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Notifying assignor about the new Assignment(partitions=[ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11])
+2025-10-04 14:09:39.068 [kafka-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Adding newly assigned partitions: ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11
+2025-10-04 14:09:39.554 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-11 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-10 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-7 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-6 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-9 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-8 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.555 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-3 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.556 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.556 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-5 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.556 [kafka-1] INFO  o.a.k.c.c.internals.ConsumerUtils - trace= tenant= user= Setting offset for partition ef.requests.v1-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[81.70.198.98:9092 (id: 1 rack: null)], epoch=0}}
+2025-10-04 14:09:39.668 [kafka-1] INFO  o.s.k.l.KafkaMessageListenerContainer - trace= tenant= user= echofilter-group: partitions assigned: [ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11]
+2025-10-04 14:10:38.329 [tomcat-handler-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - trace= tenant= user= Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-04 14:10:38.330 [tomcat-handler-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Initializing Servlet 'dispatcherServlet'
+2025-10-04 14:10:38.332 [tomcat-handler-1] INFO  o.s.web.servlet.DispatcherServlet - trace= tenant= user= Completed initialization in 2 ms
+2025-10-04 14:10:38.470 [tomcat-handler-1] INFO  o.a.k.c.producer.ProducerConfig - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [81.70.198.98:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-10-04 14:10:38.472 [tomcat-handler-1] INFO  o.a.k.c.t.i.KafkaMetricsCollector - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= initializing Kafka metrics collector
+2025-10-04 14:10:38.482 [tomcat-handler-1] INFO  o.a.k.clients.producer.KafkaProducer - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-10-04 14:10:38.501 [tomcat-handler-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= Kafka version: 3.9.1
+2025-10-04 14:10:38.501 [tomcat-handler-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= Kafka commitId: f745dfdcee2b9851
+2025-10-04 14:10:38.501 [tomcat-handler-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= Kafka startTimeMs: 1759601438501
+2025-10-04 14:10:39.460 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - trace= tenant= user= [Producer clientId=producer-1] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+2025-10-04 14:10:39.461 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - trace= tenant= user= [Producer clientId=producer-1] ProducerId set to 1002 with epoch 0
+2025-10-04 14:10:39.488 [tomcat-handler-1] INFO  c.e.c.Interceptors.TimingInterceptor - trace=037c5699-a0ac-4a97-b3e4-105543c04e39 tenant= user= HTTP OK method=POST uri=/analyze/batch status=202 tookMs=1132 handler=SendToKafkaController.batch
+2025-10-04 14:10:54.480 [kafka-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Revoke previously assigned partitions ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11
+2025-10-04 14:10:54.481 [kafka-1] INFO  o.s.k.l.KafkaMessageListenerContainer - trace= tenant= user= echofilter-group: partitions revoked: [ef.requests.v1-0, ef.requests.v1-1, ef.requests.v1-2, ef.requests.v1-3, ef.requests.v1-4, ef.requests.v1-5, ef.requests.v1-6, ef.requests.v1-7, ef.requests.v1-8, ef.requests.v1-9, ef.requests.v1-10, ef.requests.v1-11]
+2025-10-04 14:10:54.481 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Member consumer-echofilter-group-1-44732b90-690f-4e99-bdc0-f3b42434f572 sending LeaveGroup request to coordinator 81.70.198.98:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-10-04 14:10:54.482 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-10-04 14:10:54.482 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Request joining group due to: consumer pro-actively leaving the group
+2025-10-04 14:10:54.482 [kafka-1] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Unsubscribed all topics or patterns and assigned partitions
+2025-10-04 14:10:54.483 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-10-04 14:10:54.483 [kafka-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - trace= tenant= user= [Consumer clientId=consumer-echofilter-group-1, groupId=echofilter-group] Request joining group due to: consumer pro-actively leaving the group
+2025-10-04 14:10:55.183 [kafka-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-04 14:10:55.184 [kafka-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-04 14:10:55.184 [kafka-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-04 14:10:55.184 [kafka-1] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-04 14:10:55.186 [kafka-1] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.consumer for consumer-echofilter-group-1 unregistered
+2025-10-04 14:10:55.186 [kafka-1] INFO  o.s.k.l.KafkaMessageListenerContainer - trace= tenant= user= echofilter-group: Consumer stopped
+2025-10-04 14:10:55.187 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04 14:10:55.200 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - trace= tenant= user= Graceful shutdown complete
+2025-10-04 14:10:55.208 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - trace= tenant= user= [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-10-04 14:10:55.210 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics scheduler closed
+2025-10-04 14:10:55.210 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-04 14:10:55.210 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-04 14:10:55.210 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - trace= tenant= user= Metrics reporters closed
+2025-10-04 14:10:55.210 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - trace= tenant= user= App info kafka.producer for producer-1 unregistered

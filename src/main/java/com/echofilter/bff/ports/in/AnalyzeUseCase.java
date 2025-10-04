@@ -1,4 +1,4 @@
-package com.echofilter.ports.in;
+package com.echofilter.bff.ports.in;
 
 public interface AnalyzeUseCase {
 }
