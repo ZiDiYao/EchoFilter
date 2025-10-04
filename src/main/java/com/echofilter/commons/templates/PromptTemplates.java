@@ -1,6 +1,6 @@
 package com.echofilter.commons.templates;
 
-import com.echofilter.modules.utils.PromptLoader;
+import com.echofilter.lowerLevel.infrastructure.modules.utils.PromptLoader;
 import org.springframework.stereotype.Component;
 
 @Component
