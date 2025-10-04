@@ -46,5 +46,16 @@ spring:
 
   kafka:
     bootstrap-servers: 81.70.198.98:9092
+    consumer:
+      group-id: ef-ml-workers
+      enable-auto-commit: false
+      auto-offset-reset: latest
+      max-poll-records: 200
+    listener:
+      ack-mode: MANUAL_IMMEDIATE
     admin:
       fail-fast: true
+
+  threads:
+    virtual:
+      enabled: true

@@ -18,7 +18,7 @@
     <description>EchoFilter</description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <!-- 与 OkHttp 4.12.0 传递依赖兼容，避免 IDE 报警 -->
         <kotlin.version>1.8.22</kotlin.version>
         <okhttp.version>4.12.0</okhttp.version>
@@ -152,19 +152,21 @@
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
 
     </dependencies>
 
     <build>
         <plugins>
-            <!-- 编译插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
                     <release>${java.version}</release>
                     <annotationProcessorPaths>
                         <path>
@@ -176,12 +178,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Spring Boot 打包 -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -189,7 +185,7 @@
                     <mainClass>com.echofilter.EchoFilterApplication</mainClass>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
+
 </project>

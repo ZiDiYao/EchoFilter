@@ -1,6 +1,6 @@
 package com.echofilter.commons.utils.redisUtils;
 
-import com.echofilter.modules.dto.response.AnalysisResponse;
+import com.echofilter.lowerLevel.infrastructure.modules.dto.response.AnalysisResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
