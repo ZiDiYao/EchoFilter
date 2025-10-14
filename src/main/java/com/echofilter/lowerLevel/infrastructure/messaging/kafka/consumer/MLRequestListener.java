@@ -1,7 +1,10 @@
 package com.echofilter.lowerLevel.infrastructure.messaging.kafka.consumer;
 
 import com.echofilter.lowerLevel.infrastructure.messaging.kafka.model.AnalyzeRequestEvent;
+import com.echofilter.lowerLevel.infrastructure.messaging.kafka.model.AnalyzeResultEvent;
+import com.echofilter.lowerLevel.infrastructure.messaging.kafka.producer.ResultProducer;
 import com.echofilter.lowerLevel.infrastructure.modules.dto.request.LlmPromptInput;
+import com.echofilter.lowerLevel.infrastructure.modules.dto.response.AnalysisResponse;
 import com.echofilter.lowerLevel.infrastructure.modules.service.CommentAnalysisService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +13,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
+import java.time.Instant;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Semaphore;
 
@@ -22,46 +26,72 @@ public class MLRequestListener {
     @Qualifier("commentAnalysisServiceImpl")
     private final CommentAnalysisService analysisService;
 
-    // 可选：有就用来限流（避免把 LLM 打爆）；没有也可以去掉
     private final ExecutorService virtualThreadExecutor;
     private final Semaphore llmSlots;
 
+    private final ResultProducer resultProducer; // ✅ 注入结果生产者
+
     @KafkaListener(topics = "ef.requests.v1", groupId = "echofilter-group")
     public void onMessage(String payload) {
-        // 监听器线程只做轻活：解析 + 提交给虚拟线程
         virtualThreadExecutor.submit(() -> handleOne(payload));
     }
 
     private void handleOne(String payload) {
         try {
-            // 1) 反序列化请求
             AnalyzeRequestEvent req = om.readValue(payload, AnalyzeRequestEvent.class);
 
-            // 2) 映射为 LlmPromptInput（含 Constraints）
             LlmPromptInput input = new LlmPromptInput(
                     req.platform(),
                     req.language(),
                     req.text(),
                     req.context(),
                     new LlmPromptInput.Constraints(req.region(), req.requiresFreshEvidence(), req.freshnessWindowHours()),
-                    req.llmApi()  // 注意：传给 LlmPromptInput 的 LlmApi 字段（首字母大写的访问器）
+                    req.llmApi()
             );
 
-            // 3) 调用 LLM（最小目标：只要能打到 API）
-            acquire(); // 你有并发门槛就保留；没有可删
-            var result = analysisService.getCommentResult(input);
+            acquire();
+            AnalysisResponse result = analysisService.getCommentResult(input);
 
-            // 4) 日志（通用：把整个结果序列化，避免依赖具体字段）
+            // 本地日志
             String resultJson = safeJson(result);
             log.info("[LLM] OK eventId={}, taskId={}, commentId={}, platform={}, result={}",
                     req.eventId(), req.taskId(), req.commentId(), req.platform(), resultJson);
+
+            // 组装并发送结果事件 -> ef.results.v1
+            AnalyzeResultEvent outEvt = new AnalyzeResultEvent(
+                    "res.v1",
+                    req.correlationId(),
+                    req.taskId(),
+                    req.commentId(),
+                    req.platform(),
+                    req.language(),
+                    result,
+                    req.llmApi(),
+                    Instant.now()
+            );
+
+            // key 建议：优先 commentId；若为空则退回 taskId
+            String key = (req.commentId() != null && !req.commentId().isBlank())
+                    ? req.commentId()
+                    : req.taskId();
+
+            resultProducer.send(
+                    outEvt,
+                    req.eventId(),
+                    req.taskId(),
+                    req.commentId(),
+                    req.platform(),
+                    req.version(),
+                    req.correlationId(),
+                    key
+            );
 
         } catch (com.fasterxml.jackson.core.JsonProcessingException je) {
             log.error("[LLM] bad request payload. raw={}, err={}", trim(payload), je.toString(), je);
         } catch (Exception e) {
             log.error("[LLM] processing failed. raw={}, err={}", trim(payload), e.toString(), e);
         } finally {
-            release();  // 放 finally，避免异常路径忘记释放
+            release();
         }
     }
 
@@ -69,7 +99,6 @@ public class MLRequestListener {
         try { return om.writeValueAsString(o); }
         catch (Exception e) { return "<unserializable:" + e.getClass().getSimpleName() + ">"; }
     }
-
 
     private void acquire() {
         if (llmSlots != null) {
