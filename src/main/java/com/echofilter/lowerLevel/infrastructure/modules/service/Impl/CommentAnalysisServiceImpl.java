@@ -16,15 +16,15 @@ public class CommentAnalysisServiceImpl implements CommentAnalysisService {
     private final LLMApiFactory llmApiFactoryImpl;
     // use the model, then call the API
     @Override
-    @Cacheable(
-            cacheNames = "analysis",
-            key =
-                    "T(com.echofilter.commons.utils.text.Hash256).sha256Hex(" +
-                            "  T(com.echofilter.commons.utils.text.TextNormalizer).normalize(" +
-                            "     #p0.content() + '|' + (#p0.context() == null ? '' : #p0.context()) + '|' + #p0.LlmApi()" +
-                            "  )" +
-                            ")"
-    )
+//    @Cacheable(
+//            cacheNames = "analysis",
+//            key =
+//                    "T(com.echofilter.commons.utils.text.Hash256).sha256Hex(" +
+//                            "  T(com.echofilter.commons.utils.text.TextNormalizer).normalize(" +
+//                            "     #p0.content() + '|' + (#p0.context() == null ? '' : #p0.context()) + '|' + #p0.LlmApi()" +
+//                            "  )" +
+//                            ")"
+//    )
     public AnalysisResponse getCommentResult(LlmPromptInput commentRequest) {
         System.out.println("Request LLMAPI: " + commentRequest.LlmApi());
         LLMApi api = llmApiFactoryImpl.getLLMApi(commentRequest.LlmApi());
