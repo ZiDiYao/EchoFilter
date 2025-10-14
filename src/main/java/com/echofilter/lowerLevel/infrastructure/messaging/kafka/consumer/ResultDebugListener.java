@@ -25,7 +25,8 @@ public class ResultDebugListener {
     ) {
         try {
             AnalyzeResultEvent evt = om.readValue(payload, AnalyzeResultEvent.class);
-            log.info("[RESULT] taskId={}, commentId={}, platform={}, type={}, conf={}, trust={}, facts={}",
+            // Just for testing !!!!
+            log.info("[RESULT !!!!! TESTING ONLY] taskId={}, commentId={}, platform={}, type={}, conf={}, trust={}, facts={}",
                     evt.taskId(),
                     evt.commentId(),
                     evt.platform(),
