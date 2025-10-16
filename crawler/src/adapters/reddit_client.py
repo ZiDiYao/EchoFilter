@@ -13,7 +13,6 @@ class RedditClient:
     CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
     REFRESH_TOKEN = os.getenv("REDDIT_REFRESH_TOKEN")
     USER_AGENT = os.getenv("USER_AGENT", "EchoFilterCrawler/0.1")
-
     BASE_URL = "https://www.reddit.com"
 
     # {
@@ -31,22 +30,20 @@ class RedditClient:
     #         }
     #     }
     # }
+
     def fetch_comments(self, subreddit:str, article_id) -> list[CommentDTO]:
         "Base on the URL provided, fetching all comments"
-        token = self.get_access_token()
+        # token = self.get_access_token()
         url = f"{self.BASE_URL}/r/{subreddit}/comments/{article_id}.json?limit=100&sort=top"
-        headers = {"Authorization": f"bearer {token}",
-                   "User-Agent": self.USER_AGENT}
+        headers = {
+                   "User-Agent": self.USER_AGENT} #"Authorization": f"bearer {token}"
         try:
-
             resp = requests.get(url, headers = headers)
             resp.raise_for_status()
             # convert the json returned by API into directory
             data = resp.json()
-            print(json.dumps(data[:1], indent=2))  # 打印前一部分看看结构
+            print(json.dumps(data[:1], indent=2))
             return data
-
-
 
         except Exception as e:
             print("damn", e)

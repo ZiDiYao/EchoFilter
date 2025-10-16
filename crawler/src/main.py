@@ -1,6 +1,4 @@
-from adapters.reddit_client import RedditClient
-
-from adapters.reddit_client import RedditClient
+from .adapters.reddit_client import RedditClient
 
 def main():
     client = RedditClient()
