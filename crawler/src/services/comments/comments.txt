@@ -1,0 +1,56 @@
+[
+  {...},  # 第一个元素 = 帖子 (post metadata)
+  {...}   # 第二个元素 = 评论树 (comments tree)
+]
+最外层是 python 的 list
+
+第一个元素：
+
+{
+  "kind": "Listing",
+  "data": {
+    "children": [
+      {
+        "kind": "t3",              ← 这表示 “t3 = 帖子”
+        "data": {                 ← 真正的帖子内容
+          "title": "I just got fired for enforcing my legal obligation???",
+          "selftext": "I apologize if this isn’t the right place but wanted advice...",
+          "author": "Aayan_Farooqui",
+          "ups": 1200,
+          "num_comments": 326,
+          "created_utc": 1760324187.0,
+          "permalink": "/r/ontario/comments/1o58dor/...",
+          "id": "1o58dor",
+          ...
+        }
+      }
+    ]
+  }
+}
+post_data = data[0]["data"]["children"][0]["data"]
+
+
+元素 02 ：
+{
+  "kind": "Listing",
+  "data": {
+    "children": [
+      {
+        "kind": "t1",              ← “t1 = 评论(comment)”
+        "data": {
+          "author": "user123",
+          "body": "This is a comment",
+          "score": 35,
+          "created_utc": 1760329000.0,
+          "replies": {
+            "kind": "Listing",
+            "data": {
+              "children": [ { "kind": "t1", "data": {...}} ]
+            }
+          }
+        }
+      },
+      ...
+    ]
+  }
+}
